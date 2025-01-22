@@ -6,8 +6,8 @@ const Roberto = localFont({
 	src: [
 		{
 			path: 'fonts/Roberto/RobertoSans-Bold.ttf',
-			weight: '400',
-			style: 'normal',
+			weight: '700',
+			style: 'bold',
 		},
 		{
 			path: 'fonts/Roberto/RobertoSans-Medium.ttf',
