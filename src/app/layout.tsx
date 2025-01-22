@@ -5,11 +5,43 @@ import "./globals.css";
 const Roberto = localFont({
 	src: [
 		{
-			path: '../public/fonts/Roberto/RobertoSans-Bold.ttf',
+			path: 'fonts/Roberto/RobertoSans-Bold.ttf',
+			weight: '400',
+			style: 'normal',
+		},
+		{
+			path: 'fonts/Roberto/RobertoSans-Medium.ttf',
+			weight: '400',
+			style: 'normal',
+		},
+		{
+			path: 'fonts/Roberto/RobertoSans-Regular.ttf',
 			weight: '400',
 			style: 'normal',
 		},
 	],
+	variable: "--font-roberto",
+})
+
+const Degular = localFont({
+	src: [
+		{
+			path: 'fonts/Degular/Degular-Bold.otf',
+			weight: '400',
+			style: 'normal',
+		},
+		{
+			path: 'fonts/Degular/Degular-Black.otf',
+			weight: '400',
+			style: 'normal',
+		},
+		{
+			path: 'fonts/Degular/Degular-Medium.otf',
+			weight: '400',
+			style: 'normal',
+		},
+	],
+	variable: "--font-degular",
 })
 
 export const metadata: Metadata = {
@@ -24,7 +56,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body>
+			<body className={`${Roberto.variable} ${Degular.variable}`}>
 				{children}
 			</body>
 		</html>

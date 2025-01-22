@@ -10,7 +10,8 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				Roberto: ['"Roberto Sans"', 'sans-serif']
+				roberto: ["var(--font-roberto)", "sans"],
+				degular: ["var(--font-degular)", "sans"],
 			},
 			backgroundImage: {
 				'custom-gradient': 'linear-gradient(169deg, #2E335A 1.28%, #1C1B33 95.89%)',
