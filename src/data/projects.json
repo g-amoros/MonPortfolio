@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "name": "Projet 1",
+        "description": "Ceci est le premier projet",
+        "details": "Voici les détails complets du projet 1."
+    },
+    {
+        "id": "2",
+        "name": "Projet 2",
+        "description": "Ceci est le second projet",
+        "details": "Voici les détails complets du projet 2."
+    },
+    {
+        "id": "my-awesome-project",
+        "name": "Projet incroyable",
+        "description": "Un projet vraiment incroyable",
+        "details": "Voici les détails du projet incroyable."
+    }
+]

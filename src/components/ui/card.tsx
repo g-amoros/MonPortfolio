@@ -11,7 +11,7 @@ export default function Card({ children, width = 50, height = 50, borderRadius =
     return (
         <>
             <div
-                className="h-[100vh] bg-clip-padding backdrop-filter backdrop-blur-[8px] relative border-[2px] border-[#ffffff4e]"
+                className="h-[100vh] bg-clip-padding backdrop-filter backdrop-blur-[3px] relative border-[2px] border-[#ffffff4e]"
                 style={{
                     width: `${width}%`,
                     height: `${height}%`,
