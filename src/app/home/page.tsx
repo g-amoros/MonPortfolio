@@ -1,9 +1,7 @@
-import Background from '../components/ui/animated-grid-pattern';
-import Card from '../components/ui/card';
-import Profile from './profile';
+import Background from '../../components/ui/animated-grid-pattern';
+import Card from '../../components/ui/card';
+import Profile from '.././profile';
 import Image from 'next/image';
-import House from '../../public/house.svg';
-import ImageE from '../../public/image.png';
 
 export default function Home() {
     const currentYear = new Date().getFullYear();
@@ -20,7 +18,7 @@ export default function Home() {
                         <div className="h-[20rem] w-[20rem] relative">
                             <div className="flex gap-4 items-end justify-center absolute top-[-4rem]">
                                 <Image
-                                    src={House}
+                                    src={'/house.svg'}
                                     alt="House"
                                     width={25}
                                     height={25}
@@ -32,7 +30,7 @@ export default function Home() {
                             <Card width={100} height={85} borderRadius={20}>
                                 <div className="flex justify-center items-center h-full">
                                     <Image
-                                        src={ImageE}
+                                        src={'/image.png'}
                                         alt="Image"
                                         width={300}
                                         height={300}
@@ -44,7 +42,7 @@ export default function Home() {
                             <Card width={100} height={85} borderRadius={20}>
                                 <div className="flex justify-center items-center h-full">
                                     <Image
-                                        src={ImageE}
+                                        src={'/image.png'}
                                         alt="Image"
                                         width={300}
                                         height={300}
@@ -56,7 +54,7 @@ export default function Home() {
                             <Card width={100} height={85} borderRadius={20}>
                                 <div className="flex justify-center items-center h-full">
                                     <Image
-                                        src={ImageE}
+                                        src={'/image.png'}
                                         alt="Image"
                                         width={300}
                                         height={300}
@@ -68,7 +66,7 @@ export default function Home() {
                             <Card width={100} height={85} borderRadius={20}>
                                 <div className="flex justify-center items-center h-full">
                                     <Image
-                                        src={ImageE}
+                                        src={'/image.png'}
                                         alt="Image"
                                         width={300}
                                         height={300}
@@ -80,7 +78,7 @@ export default function Home() {
                             <Card width={100} height={85} borderRadius={20}>
                                 <div className="flex justify-center items-center h-full">
                                     <Image
-                                        src={ImageE}
+                                        src={'/image.png'}
                                         alt="Image"
                                         width={300}
                                         height={300}
@@ -92,7 +90,7 @@ export default function Home() {
                             <Card width={100} height={85} borderRadius={20}>
                                 <div className="flex justify-center items-center h-full">
                                     <Image
-                                        src={ImageE}
+                                        src={'/image.png'}
                                         alt="Image"
                                         width={300}
                                         height={300}
