@@ -1,20 +1,52 @@
 [
     {
         "id": "1",
-        "name": "Projet 1",
+        "name": "Portfolio de BANKAI-PSD",
         "description": "Ceci est le premier projet",
-        "details": "Voici les détails complets du projet 1."
+        "details": "Voici les détails complets du projet 1.",
+        "image": "/Projet1.png",
+        "images": [
+            "@/public/Projet3-DypYubmy.png",
+            "@/public/Projet3-DypYubmy.png",
+            "@/public/Projet3-DypYubmy.png",
+            "@/public/Projet3-DypYubmy.png",
+            "@/public/Projet3-DypYubmy.png",
+            "@/public/Projet3-DypYubmy.png"
+        ]
     },
     {
         "id": "2",
         "name": "Projet 2",
         "description": "Ceci est le second projet",
-        "details": "Voici les détails complets du projet 2."
+        "details": "Voici les détails complets du projet 2.",
+        "image": "/Projet2.png"
     },
     {
-        "id": "my-awesome-project",
+        "id": "3",
         "name": "Projet incroyable",
         "description": "Un projet vraiment incroyable",
-        "details": "Voici les détails du projet incroyable."
+        "details": "Voici les détails du projet incroyable.",
+        "image": "/Projet3.png"
+    },
+    {
+        "id": "4",
+        "name": "Projet 2",
+        "description": "Ceci est le second projet",
+        "details": "Voici les détails complets du projet 2.",
+        "image": "/Projet4.png"
+    },
+    {
+        "id": "5",
+        "name": "Projet 2",
+        "description": "Ceci est le second projet",
+        "details": "Voici les détails complets du projet 2.",
+        "image": "/Projet5.png"
+    },
+    {
+        "id": "6",
+        "name": "Projet 2",
+        "description": "Ceci est le second projet",
+        "details": "Voici les détails complets du projet 2.",
+        "image": "/Projet6.png"
     }
 ]

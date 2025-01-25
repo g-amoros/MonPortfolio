@@ -1,34 +1,42 @@
-"use client"
+'use client';
 
 import Card from '@/components/ui/card';
 import Image from 'next/image';
-import ImageE from '@/public/image.png';
 import Link from 'next/link';
 import projectsData from '@/data/projects.json';
+import Path from '@/components/ui/path';
 
 export default function Projects() {
     return (
         <>
-
-            <div className="flex flex-wrap gap-8 w-full mt-24 justify-center">
-                {
-                    projectsData.map((project) => (
-                        <div key={project.id} className="h-fit w-fit">
-                            <Card width={80} height={67} borderRadius={20}>
-                                <Link href={`/projects/${project.id}`}>
-                                    <div className="flex justify-center items-center h-full p-4" >
+            <div className="w-[80%] mx-auto flex flex-col min-h-full">
+                <Path />
+                <div className="flex flex-wrap -mx-4">
+                    {projectsData.map((project) => (
+                        <div
+                            key={project.id}
+                            className="w-full sm:w-1/2 md:w-1/3 px-4 mb-8"
+                        >
+                            <Card width={0} height={0} borderRadius={20}>
+                                <Link
+                                    href={`/projects/${project.id}`}
+                                    className="cursor-pointer"
+                                >
+                                    <div className="flex justify-center items-center p-4">
                                         <Image
-                                            src={ImageE}
+                                            src={project.image}
                                             alt="Image"
-                                            width={250}
-                                            height={250}
+                                            width={100}
+                                            height={100}
+                                            className="w-full h-auto rounded-xl"
+                                            layout="responsive"
                                         />
                                     </div>
                                 </Link>
                             </Card>
                         </div>
-                    ))
-                }
+                    ))}
+                </div>
             </div>
         </>
     );

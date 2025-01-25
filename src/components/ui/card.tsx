@@ -7,15 +7,20 @@ interface CardProps {
     borderRadius?: number;
 }
 
-export default function Card({ children, width = 50, height = 50, borderRadius = 35 }: CardProps) {
+export default function Card({
+    children,
+    width = 0,
+    height = 0,
+    borderRadius = 35,
+}: CardProps) {
     return (
         <>
             <div
-                className="h-[100vh] bg-clip-padding backdrop-filter backdrop-blur-[3px] relative border-[2px] border-[#ffffff4e]"
+                className="bg-clip-padding backdrop-filter backdrop-blur-[3px] relative border-[2px] border-[#ffffff4e]"
                 style={{
-                    width: `${width}%`,
-                    height: `${height}%`,
+                    width: width === 0 ? 'auto' : `${width}%`,
                     borderRadius: `${borderRadius}px`,
+                    height: height === 0 ? 'auto' : `${height}%`,
                 }}
             >
                 <div

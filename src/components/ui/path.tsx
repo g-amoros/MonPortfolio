@@ -1,46 +1,62 @@
-"use client"
+'use client';
 
-import { usePathname, useRouter } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
 import Image from 'next/image';
-import House from '@/public/house.svg';
+import House from '@/public/house.png';
+import Card from '@/components/ui/card';
 
-export default function Path() {
-    const pathname = usePathname();
+interface PathProps {
+    projectName?: string;
+}
+
+export default function Path({ projectName }: PathProps) {
     const router = useRouter();
-    const [path, setPath] = useState('');
-
-    useEffect(() => {
-        switch (pathname) {
-            case '/':
-                setPath('Accueil');
-                break;
-            case '/projects':
-                setPath('Accueil / Projets');
-                break;
-            case '/projects/portfolio':
-                setPath('Accueil / Projets / Portfolio');
-                break;
-            default:
-                break;
-        }
-    }
-    ), [pathname];
 
     return (
         <>
-            <div className="flex gap-4 items-end justify-center">
-                <Image
-                    src={House}
-                    alt="House"
-                    width={25}
-                    height={25}
+            <div className="flex gap-4 items-end justify-start mb-7">
+                <button
+                    style={{ all: 'unset' }}
                     onClick={() => router.push('/')}
-                />
-                <h4 className="text-xl font-roberto font-bold text-white">
-                    {path}
-                </h4>
+                >
+                    <Card width={0} height={0} borderRadius={15}>
+                        <div className="px-5 py-3">
+                            <Image
+                                src={House}
+                                alt="House"
+                                width={25}
+                                height={25}
+                                onClick={() => router.push('/')}
+                            />
+                        </div>
+                    </Card>
+                </button>
+                <button
+                    style={{ all: 'unset' }}
+                    onClick={() => router.push('/projects')}
+                >
+                    <Card width={0} height={0} borderRadius={15}>
+                        <div className="px-5 py-3 ">
+                            <h4 className="text-xl font-degular font-bold text-white">
+                                Projets
+                            </h4>
+                        </div>
+                    </Card>
+                </button>
+                {projectName && (
+                    <>
+                        <button style={{ all: 'unset' }}>
+                            <Card width={0} height={25} borderRadius={15}>
+                                <div className="px-5 py-3">
+                                    <h4 className="text-xl font-degular font-bold text-white">
+                                        {projectName}
+                                    </h4>
+                                </div>
+                            </Card>
+                        </button>
+                    </>
+                )}
             </div>
         </>
-    )
+    );
 }

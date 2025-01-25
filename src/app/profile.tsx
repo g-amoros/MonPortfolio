@@ -7,79 +7,64 @@ import Polygon from '@/public/polygon.svg';
 import Laptop from '@/public/Laptop.svg';
 import Cabinet from '@/public/cabinet.svg';
 import Palette from '@/public/palette.svg';
-import Linkedin from '@/public/linkedin.svg';
-import Github from '@/public/github.svg';
-import Twitter from '@/public/x.svg';
-import Instagram from '@/public/instagram.svg';
-import Youtube from '@/public/youtube.svg';
-import Tiktok from '@/public/tiktok.svg';
 import Enveloppe from '@/public/enveloppe.png';
-
-const socials = [
-    {
-        name: 'Linkedin',
-        icon: Linkedin,
-        link: 'https://www.linkedin.com/in/gaelamoros/',
-    },
-    {
-        name: 'Github',
-        icon: Github,
-        link: 'https://www.linkedin.com/in/gaelamoros/',
-    },
-    {
-        name: 'Twitter',
-        icon: Twitter,
-        link: 'https://www.linkedin.com/in/gaelamoros/',
-    },
-    {
-        name: 'Instagram',
-        icon: Instagram,
-        link: 'https://www.linkedin.com/in/gaelamoros/',
-    },
-    {
-        name: 'Youtube',
-        icon: Youtube,
-        link: 'https://www.linkedin.com/in/gaelamoros/',
-    },
-    {
-        name: 'Tiktok',
-        icon: Tiktok,
-        link: 'https://www.linkedin.com/in/gaelamoros/',
-    },
-];
+import Html from '@/public/html.svg';
+import Css from '@/public/css.svg';
+import Js from '@/public/js.svg';
+import Ts from '@/public/ts.svg';
+import Node from '@/public/nodejs.svg';
+import ReactIcon from '@/public/react.svg';
+import Php from '@/public/php.svg';
+import C from '@/public/c.svg';
 
 const skills = [
     {
         name: 'HTML',
-        icon: '@/public/html.svg',
+        icon: Html,
+        width: 45,
+        height: 45,
     },
     {
         name: 'CSS',
-        icon: '@/public/css.svg',
+        icon: Css,
+        width: 45,
+        height: 45,
     },
     {
         name: 'Javascript',
-        icon: '../../../public/js.svg',
+        icon: Js,
+        width: 45,
+        height: 45,
     },
     {
-        name: 'React',
-        icon: '@/public/react.svg',
-    },
-    {
-        name: 'Next',
-        icon: '@/public/next.svg',
+        name: 'Typescript',
+        icon: Ts,
+        width: 55,
+        height: 55,
     },
     {
         name: 'Node',
-        icon: '@/public/react.svg',
+        icon: Node,
+        width: 45,
+        height: 45,
     },
     {
-        name: 'Express',
-        icon: '@/public/react.svg',
+        name: 'React',
+        icon: ReactIcon,
+        width: 45,
+        height: 45,
     },
     {
-        name: 'MongoDB',
-        icon: '@/public/react.svg',
+        name: 'Php',
+        icon: Php,
+        width: 45,
+        height: 45,
+    },
+    {
+        name: 'C++',
+        icon: C,
+        width: 45,
+        height: 45,
     },
 ];
 
@@ -120,7 +105,7 @@ export default function Profile() {
                             I&apos;m Gaël Amoros
                         </h2>
                         <div className="w-full h-[0.0625rem] bg-[#FFF] my-8" />
-                        <p className="text-[#efefef] text-sm font-roberto font-light">
+                        <p className="text-[#efefef] text-sm font-roberto font-normal">
                             Actuellement étudiant en informatique & développeur
                             Web basé à Avignon,{' '}
                             <span className="font-bold font-roberto">
@@ -141,8 +126,8 @@ export default function Profile() {
                                 <Image
                                     src={Laptop}
                                     alt="Laptop"
-                                    width={15}
-                                    height={15}
+                                    width={20}
+                                    height={20}
                                     className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
                                 />
                             </div>
@@ -165,8 +150,8 @@ export default function Profile() {
                                 <Image
                                     src={Cabinet}
                                     alt="Cabinet"
-                                    width={15}
-                                    height={15}
+                                    width={20}
+                                    height={20}
                                     className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
                                 />
                             </div>
@@ -189,8 +174,8 @@ export default function Profile() {
                                 <Image
                                     src={Palette}
                                     alt="Palette"
-                                    width={15}
-                                    height={15}
+                                    width={25}
+                                    height={25}
                                     className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
                                 />
                             </div>
@@ -204,22 +189,20 @@ export default function Profile() {
                     </div>
                 </Card>
             </div>
-            <div className="h-fit">
+            <div className="h-auto">
                 <Card width={100} height={100}>
                     <div className="h-full flex flex-col justify-between gap-8 px-12 py-12">
                         <div className="flex flex-wrap justify-between items-center gap-4">
-                            {
-                                skills.map((skill, index) => (
-                                    <div key={index}>
-                                        <Image
-                                            src={skill.icon}
-                                            alt={skill.name}
-                                            width={50}
-                                            height={50}
-                                        />
-                                    </div>
-                                ))
-                            }
+                            {skills.map((skill, index) => (
+                                <div key={index}>
+                                    <Image
+                                        src={skill.icon}
+                                        alt={skill.name}
+                                        width={skill.width}
+                                        height={skill.height}
+                                    />
+                                </div>
+                            ))}
                         </div>
                         <div className="flex items-center flex-col gap-4">
                             <button className="flex w-full justify-center items-center px-8 py-4 font-roberto font-bold text-white text-xl gap-4">
@@ -234,19 +217,6 @@ export default function Profile() {
                         </div>
                     </div>
                 </Card>
-            </div>
-            <div className="h-fit ">
-                <div className="flex relative justify-between w-full h-20">
-                    {socials.map((social, index) => (
-                        <a href={social.link} key={index} className='w-full h-full'>
-                            <Image
-                                src={social.icon}
-                                alt={social.name}
-                                className='absolute bottom-0'
-                            />
-                        </a>
-                    ))}
-                </div>
             </div>
         </>
     );
