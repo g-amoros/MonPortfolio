@@ -4,7 +4,7 @@ import Card from '@/components/ui/card';
 import Image from 'next/image';
 import Link from 'next/link';
 import projectsData from '@/data/projects.json';
-import Path from '@/components/ui/path';
+import Navbar from '@/components/ui/navbar';
 import { BlurFade } from '@/components/ui/blur-fade';
 
 const images = Array.from({ length: 9 }, (_, i) => {
@@ -17,13 +17,13 @@ const images = Array.from({ length: 9 }, (_, i) => {
 export default function Projects() {
     return (
         <>
-            <div className="w-[80%] mx-auto flex flex-col min-h-full">
-                <Path />
+            <div className="2xl:w-[80%] mx-auto flex flex-col min-h-full">
+                <Navbar />
                 <div className="flex flex-wrap -mx-4">
                     {projectsData.map((project, index) => (
                         <div
                             key={project.id}
-                            className="w-full sm:w-1/2 md:w-1/3 px-4 mb-8"
+                            className="w-full lg:w-1/2 2xl:w-1/3 px-4 mb-8"
                         >
                             <BlurFade delay={0.25 + index * 0.2} inView>
                                 <Card

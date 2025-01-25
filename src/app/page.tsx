@@ -5,8 +5,8 @@ import { PulsatingButton } from '@/components/ui/pulsating-button';
 export default function RootPage() {
     return (
         <>
-            <div className="w-[80%] mx-auto flex flex-col min-h-full h-screen">
-                <div className="flex flex-col items-center justify-center h-full gap-16">
+            <div className="flex flex-col min-h-full h-screen">
+                <div className="flex flex-col items-center justify-center h-full gap-10">
                     <TextAnimate
                         animation="blurInUp"
                         by="character"

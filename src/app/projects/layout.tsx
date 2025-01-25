@@ -9,8 +9,8 @@ export default function ProjectsLayout({
 }>) {
     return (
         <div>
-            <div className="flex px-16 gap-16 pb-8 pt-20 items-stretch">
-                <div className="grid gap-8 h-auto max-w-[25rem]">
+            <div className="grid lg:flex px-16 gap-16 pb-8 pt-20 items-stretch">
+                <div className="grid md:flex lg:grid gap-8 h-auto lg:max-w-[25rem] min-w-[25rem]">
                     <Profile />
                 </div>
                 <div className="h-auto w-full">{children}</div>

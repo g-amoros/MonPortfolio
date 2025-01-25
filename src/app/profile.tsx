@@ -16,57 +16,101 @@ import Node from '@/public/nodejs.svg';
 import ReactIcon from '@/public/react.svg';
 import Php from '@/public/php.svg';
 import C from '@/public/c.svg';
+import Linkedin from '@/public/linkedin.svg';
+import Github from '@/public/github.svg';
+import Twitter from '@/public/x.svg';
+import Instagram from '@/public/instagram.svg';
+import Youtube from '@/public/youtube.svg';
+import Tiktok from '@/public/tiktok.svg';
 
-const skills = [
+const socials = [
     {
-        name: 'HTML',
-        icon: Html,
-        width: 45,
-        height: 45,
+        name: 'Linkedin',
+        icon: Linkedin,
+        link: 'https://www.linkedin.com/in/gael-amoros/',
     },
     {
-        name: 'CSS',
-        icon: Css,
-        width: 45,
-        height: 45,
+        name: 'Github',
+        icon: Github,
+        link: 'https://github.com/MisterGawel',
     },
     {
-        name: 'Javascript',
-        icon: Js,
-        width: 45,
-        height: 45,
+        name: 'Twitter',
+        icon: Twitter,
+        link: 'https://x.com/asgael13',
     },
     {
-        name: 'Typescript',
-        icon: Ts,
-        width: 55,
-        height: 55,
+        name: 'Instagram',
+        icon: Instagram,
+        link: 'https://www.instagram.com/as.gael13/',
     },
     {
-        name: 'Node',
-        icon: Node,
-        width: 45,
-        height: 45,
+        name: 'Youtube',
+        icon: Youtube,
+        link: 'https://www.youtube.com/@as.gael13',
     },
     {
-        name: 'React',
-        icon: ReactIcon,
-        width: 45,
-        height: 45,
-    },
-    {
-        name: 'Php',
-        icon: Php,
-        width: 45,
-        height: 45,
-    },
-    {
-        name: 'C++',
-        icon: C,
-        width: 45,
-        height: 45,
+        name: 'Tiktok',
+        icon: Tiktok,
+        link: 'https://www.tiktok.com/@as.gael13',
     },
 ];
+
+const skills = {
+    langages: [
+        {
+            name: 'HTML',
+            icon: Html,
+            width: 45,
+            height: 45,
+        },
+        {
+            name: 'CSS',
+            icon: Css,
+            width: 45,
+            height: 45,
+        },
+        {
+            name: 'Javascript',
+            icon: Js,
+            width: 45,
+            height: 45,
+        },
+        {
+            name: 'Typescript',
+            icon: Ts,
+            width: 55,
+            height: 55,
+        },
+
+        {
+            name: 'Php',
+            icon: Php,
+            width: 45,
+            height: 45,
+        },
+        {
+            name: 'C++',
+            icon: C,
+            width: 45,
+            height: 45,
+        },
+    ],
+    frameworks: [
+        {
+            name: 'Node',
+            icon: Node,
+            width: 45,
+            height: 45,
+        },
+        {
+            name: 'React',
+            icon: ReactIcon,
+            width: 45,
+            height: 45,
+        },
+    ],
+}
 
 export default function Profile() {
     return (
@@ -82,7 +126,7 @@ export default function Profile() {
                             className="absolute -top-16"
                         />
                     </div>
-                    <div className="flex flex-col justify-center flex-shrink-0 px-12 mt-[9.5rem]">
+                    <div className="flex flex-col justify-center flex-shrink-0 px-12 mt-[10.5rem]">
                         <div className="flex items-end">
                             <h1
                                 className="text-2xl text-[#efefefcc] font-degular font-bold"
@@ -105,7 +149,8 @@ export default function Profile() {
                             I&apos;m Gaël Amoros
                         </h2>
                         <div className="w-full h-[0.0625rem] bg-[#FFF] my-8" />
-                        <p className="text-[#efefef] text-sm font-roberto font-normal">
+
+                        <p className="text-[#efefef] text-sm font-roberto font-normal mt-3">
                             Actuellement étudiant en informatique & développeur
                             Web basé à Avignon,{' '}
                             <span className="font-bold font-roberto">
@@ -113,7 +158,7 @@ export default function Profile() {
                             </span>
                         </p>
                     </div>
-                    <div className="flex flex-col justify-center flex-shrink-0 px-12 gap-4 my-8">
+                    <div className="flex flex-col justify-center flex-shrink-0 px-12 gap-4 my-10">
                         <div className="flex items-center">
                             <div className="relative">
                                 <Image
@@ -192,14 +237,22 @@ export default function Profile() {
             <div className="h-auto animate__zoomInLeft animate__animated">
                 <Card width={100} height={100}>
                     <div className="h-full flex flex-col justify-between gap-8 px-12 py-12">
-                        <h1 className='font-degular font-bold text-[#efefefcc] text-xl'>Mes préférences</h1>
+                        <h1
+                            className="text-2xl text-[#efefefcc] font-degular font-bold"
+                            style={{
+                                textShadow:
+                                    '6.41px 6.41px 9.1px rgba(0, 0, 0, 0.11)',
+                            }}
+                        >
+                            Mes préférences
+                        </h1>
                         <div>
                             <div>
                                 <h5 className="text-[#EFEFEF80] font-degular text-lg font-light">
                                     Langages
                                 </h5>
                                 <div className="flex flex-wrap items-center gap-2 mt-2">
-                                    {skills.map((skill, index) => (
+                                    {skills.langages.map((skill, index) => (
                                         <div key={index} className='w-7 h-7'>
                                             <Image
                                                 src={skill.icon}
@@ -212,12 +265,12 @@ export default function Profile() {
                                     ))}
                                 </div>
                             </div>
-                            <div>
+                            <div className='mt-4 mb-4'>
                                 <h5 className="text-[#EFEFEF80] font-degular text-lg font-light">
-                                    Langages
+                                    Frameworks
                                 </h5>
                                 <div className="flex flex-wrap items-center gap-2 mt-2">
-                                    {skills.map((skill, index) => (
+                                    {skills.frameworks.map((skill, index) => (
                                         <div key={index} className='w-7 h-7'>
                                             <Image
                                                 src={skill.icon}
@@ -241,6 +294,23 @@ export default function Profile() {
                                 />
                                 <span>Contactez-moi</span>
                             </button>
+                        </div>
+                        <div className="flex relative justify-between w-full gap-3">
+                            {socials.map((social, index) => (
+                                <a
+                                    href={social.link}
+                                    key={index}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className=" h-fit hover:scale-90 transform transition-all duration-300"
+                                >
+                                    <Image
+                                        src={social.icon}
+                                        alt={social.name}
+                                        className="bottom-0"
+                                    />
+                                </a>
+                            ))}
                         </div>
                     </div>
                 </Card>
