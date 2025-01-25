@@ -2,9 +2,33 @@
     {
         "id": "1",
         "name": "Portfolio de BANKAI-PSD",
-        "description": "Ceci est le premier projet",
-        "details": "Voici les détails complets du projet 1.",
+        "subtitle": "Un site vitrine pour un graphiste freelance",
+        "description": "Conception d'un portfolio responsive pour un graphiste freelance, visant à présenter ses créations et attirer de nouveaux clients. Le site met l'accent sur l'accessibilité et la performance.",
+        "date": "10/20/2023",
         "image": "/Projet1.png",
+        "images": [
+            "http://192.168.193.164:3000/public/Projet3.png",
+            "http://192.168.193.164:3000/public/Projet3.png",
+            "http://192.168.193.164:3000/public/Projet3.png",
+            "http://192.168.193.164:3000/public/Projet3.png",
+            "http://192.168.193.164:3000/public/Projet3.png",
+            "http://192.168.193.164:3000/public/Projet3.png"
+        ],
+        "video": "Projet1.mov",
+        "langages": ["HTML", "CSS", "JavaScript, Php, Bootstrap"],
+        "frameworks": null,
+        "outils": null,
+        "base_de_donnees": null,
+        "url": "https://www.bankai-psd.fr/",
+        "github": "https://www.bankai-psd.fr/"
+    },
+    {
+        "id": "2",
+        "name": "Site e-commerce",
+        "subtitle": "Un site e-commerce pour une boutique de composants informatiques",
+        "description": "Site e-commerce spécialisé dans les composants informatiques, développé avec ReactJS, Node.js et Firebase. Interface responsive, gestion du panier, recherche de produits et authentification sécurisée intégrées pour une expérience utilisateur optimisée.",
+        "date": "10/20/2023",
+        "image": "/Projet2.png",
         "images": [
             "@/public/Projet3-DypYubmy.png",
             "@/public/Projet3-DypYubmy.png",
@@ -12,41 +36,105 @@
             "@/public/Projet3-DypYubmy.png",
             "@/public/Projet3-DypYubmy.png",
             "@/public/Projet3-DypYubmy.png"
-        ]
-    },
-    {
-        "id": "2",
-        "name": "Projet 2",
-        "description": "Ceci est le second projet",
-        "details": "Voici les détails complets du projet 2.",
-        "image": "/Projet2.png"
+        ],
+        "video": "Projet2.mov",
+        "langages": ["HTML", "CSS", "JavaScript"],
+        "frameworks": ["ReactJS", "Node.js"],
+        "outils": ["Visual Studio Code"],
+        "base_de_donnees": ["Firebase"],
+        "url": null,
+        "github": ""
     },
     {
         "id": "3",
-        "name": "Projet incroyable",
-        "description": "Un projet vraiment incroyable",
-        "details": "Voici les détails du projet incroyable.",
-        "image": "/Projet3.png"
+        "name": "Site vitrine pour une boulangerie",
+        "subtitle": "Un site vitrine pour un graphiste freelance",
+        "description": "Création d'un site vitrine pour une boulangerie située à Avignon. Le site est responsive et a été réalisé en HTML, CSS, Javascript et PHP, avec l'utilisation du framework Bootstrap pour la mise en forme.",
+        "date": "10/20/2023",
+        "image": "/Projet3.png",
+        "images": [
+            "@/public/Projet3-DypYubmy.png",
+            "@/public/Projet3-DypYubmy.png",
+            "@/public/Projet3-DypYubmy.png",
+            "@/public/Projet3-DypYubmy.png",
+            "@/public/Projet3-DypYubmy.png",
+            "@/public/Projet3-DypYubmy.png"
+        ],
+        "video": "Projet3.mp4",
+        "langages": ["HTML", "CSS", "JavaScript", "PHP"],
+        "frameworks": null,
+        "outils": null,
+        "base_de_donnees": null,
+        "url": "https://bankai-psd.netlify.app/",
+        "github": ""
     },
     {
         "id": "4",
-        "name": "Projet 2",
-        "description": "Ceci est le second projet",
-        "details": "Voici les détails complets du projet 2.",
-        "image": "/Projet4.png"
+        "name": "Parc Informatique",
+        "subtitle": "Un site vitrine pour un graphiste freelance",
+        "description": "Création d'une plate-forme de monitoring pour un parc informatique sous Linux permettant de gérer et visualiser les données de plusieurs serveurs en temps réel. Un site permet de visualiser les données de manière graphique.",
+        "date": "10/20/2023",
+        "image": "/Projet4.png",
+        "images": [
+            "@/public/Projet3-DypYubmy.png",
+            "@/public/Projet3-DypYubmy.png",
+            "@/public/Projet3-DypYubmy.png",
+            "@/public/Projet3-DypYubmy.png",
+            "@/public/Projet3-DypYubmy.png",
+            "@/public/Projet3-DypYubmy.png"
+        ],
+        "video": "Projet4.mov",
+        "langages": ["HTML", "CSS", "JavaScript", "PHP", "Python", "Bash"],
+        "frameworks": null,
+        "outils": null,
+        "base_de_donnees": null,
+        "url": null,
+        "github": "https://github.com/MisterGawel/Parc-Informatique"
     },
     {
         "id": "5",
-        "name": "Projet 2",
-        "description": "Ceci est le second projet",
-        "details": "Voici les détails complets du projet 2.",
-        "image": "/Projet5.png"
+        "name": "Portfolio de BANKAI-PSD",
+        "subtitle": "Un site vitrine pour un graphiste freelance",
+        "description": "Conception d'un portfolio responsive pour un graphiste freelance, visant à présenter ses créations et attirer de nouveaux clients. Le site met l'accent sur l'accessibilité et la performance.",
+        "date": "10/20/2023",
+        "image": "/Projet5.png",
+        "images": [
+            "@/public/Projet3-DypYubmy.png",
+            "@/public/Projet3-DypYubmy.png",
+            "@/public/Projet3-DypYubmy.png",
+            "@/public/Projet3-DypYubmy.png",
+            "@/public/Projet3-DypYubmy.png",
+            "@/public/Projet3-DypYubmy.png"
+        ],
+        "video": "Projet5.mp4",
+        "langages": ["HTML", "CSS", "JavaScript"],
+        "frameworks": ["React", "Bootstrap"],
+        "outils": ["Visual Studio Code", "Git", "GitHub"],
+        "base_de_donnees": ["MongoDB", "MySQL"],
+        "url": "https://bankai-psd.netlify.app/",
+        "github": ""
     },
     {
         "id": "6",
-        "name": "Projet 2",
-        "description": "Ceci est le second projet",
-        "details": "Voici les détails complets du projet 2.",
-        "image": "/Projet6.png"
+        "name": "Portfolio de BANKAI-PSD",
+        "subtitle": "Un site vitrine pour un graphiste freelance",
+        "description": "Conception d'un portfolio responsive pour un graphiste freelance, visant à présenter ses créations et attirer de nouveaux clients. Le site met l'accent sur l'accessibilité et la performance.",
+        "date": "10/20/2023",
+        "image": "/Projet6.png",
+        "images": [
+            "@/public/Projet3-DypYubmy.png",
+            "@/public/Projet3-DypYubmy.png",
+            "@/public/Projet3-DypYubmy.png",
+            "@/public/Projet3-DypYubmy.png",
+            "@/public/Projet3-DypYubmy.png",
+            "@/public/Projet3-DypYubmy.png"
+        ],
+        "video": "Projet6.mov",
+        "langages": ["HTML", "CSS", "JavaScript"],
+        "frameworks": ["React", "Bootstrap"],
+        "outils": ["Visual Studio Code", "Git", "GitHub"],
+        "base_de_donnees": ["MongoDB", "MySQL"],
+        "url": "https://bankai-psd.netlify.app/",
+        "github": ""
     }
 ]

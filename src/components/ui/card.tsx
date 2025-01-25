@@ -5,6 +5,7 @@ interface CardProps {
     width?: number;
     height?: number;
     borderRadius?: number;
+    css?: string;
 }
 
 export default function Card({
@@ -12,11 +13,12 @@ export default function Card({
     width = 0,
     height = 0,
     borderRadius = 35,
+    css,
 }: CardProps) {
     return (
         <>
             <div
-                className="bg-clip-padding backdrop-filter backdrop-blur-[3px] relative border-[2px] border-[#ffffff4e]"
+                className={`transition-all bg-clip-padding backdrop-filter backdrop-blur-[3px] relative border-[2px] border-[#ffffff4e] ${css}`}
                 style={{
                     width: width === 0 ? 'auto' : `${width}%`,
                     borderRadius: `${borderRadius}px`,

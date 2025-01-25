@@ -107,6 +107,7 @@ body {
 
 button {
     border-radius: 1.125rem;
+    --animate-delay: 0.5s;
     background: linear-gradient(
             169deg,
             rgba(46, 51, 90, 0.5) 3.28%,

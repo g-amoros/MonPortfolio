@@ -14,12 +14,17 @@ export default function Path({ projectName }: PathProps) {
 
     return (
         <>
-            <div className="flex gap-4 items-end justify-start mb-7">
+            <div className="flex gap-4 items-end justify-start mb-7 ">
                 <button
                     style={{ all: 'unset' }}
                     onClick={() => router.push('/')}
                 >
-                    <Card width={0} height={0} borderRadius={15}>
+                    <Card
+                        width={0}
+                        height={0}
+                        borderRadius={15}
+                        css="cursor-pointer hover:bg-custom-gradient-card"
+                    >
                         <div className="px-5 py-3">
                             <Image
                                 src={House}
@@ -35,8 +40,13 @@ export default function Path({ projectName }: PathProps) {
                     style={{ all: 'unset' }}
                     onClick={() => router.push('/projects')}
                 >
-                    <Card width={0} height={0} borderRadius={15}>
-                        <div className="px-5 py-3 ">
+                    <Card
+                        width={0}
+                        height={0}
+                        borderRadius={15}
+                        css="cursor-pointer hover:bg-custom-gradient-card"
+                    >
+                        <div className="px-5 py-3">
                             <h4 className="text-xl font-degular font-bold text-white">
                                 Projets
                             </h4>
@@ -46,7 +56,12 @@ export default function Path({ projectName }: PathProps) {
                 {projectName && (
                     <>
                         <button style={{ all: 'unset' }}>
-                            <Card width={0} height={25} borderRadius={15}>
+                            <Card
+                                width={0}
+                                height={25}
+                                borderRadius={15}
+                                css="cursor-pointer hover:bg-custom-gradient-card"
+                            >
                                 <div className="px-5 py-3">
                                     <h4 className="text-xl font-degular font-bold text-white">
                                         {projectName}

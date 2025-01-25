@@ -10,32 +10,32 @@ const socials = [
     {
         name: 'Linkedin',
         icon: Linkedin,
-        link: 'https://www.linkedin.com/in/gaelamoros/',
+        link: 'https://www.linkedin.com/in/gael-amoros/',
     },
     {
         name: 'Github',
         icon: Github,
-        link: 'https://www.linkedin.com/in/gaelamoros/',
+        link: 'https://github.com/MisterGawel',
     },
     {
         name: 'Twitter',
         icon: Twitter,
-        link: 'https://www.linkedin.com/in/gaelamoros/',
+        link: 'https://x.com/asgael13',
     },
     {
         name: 'Instagram',
         icon: Instagram,
-        link: 'https://www.linkedin.com/in/gaelamoros/',
+        link: 'https://www.instagram.com/as.gael13/',
     },
     {
         name: 'Youtube',
         icon: Youtube,
-        link: 'https://www.linkedin.com/in/gaelamoros/',
+        link: 'https://www.youtube.com/@as.gael13',
     },
     {
         name: 'Tiktok',
         icon: Tiktok,
-        link: 'https://www.linkedin.com/in/gaelamoros/',
+        link: 'https://www.tiktok.com/@as.gael13',
     },
 ];
 
@@ -44,19 +44,21 @@ export default function Footer() {
 
     return (
         <>
-            <div className="grid gap-8 h-full max-w-96 w-full">
+            <div className="grid gap-8 h-full w-full max-w-[25rem]">
                 <div className="h-fit relative">
-                    <div className="flex relative justify-between w-full h-20">
+                    <div className="flex relative justify-between w-full">
                         {socials.map((social, index) => (
                             <a
                                 href={social.link}
                                 key={index}
-                                className="w-full h-full"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className=" h-fit hover:scale-90 transform transition-all duration-300"
                             >
                                 <Image
                                     src={social.icon}
                                     alt={social.name}
-                                    className="absolute bottom-0"
+                                    className="bottom-0"
                                 />
                             </a>
                         ))}

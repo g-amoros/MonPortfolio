@@ -71,7 +71,7 @@ const skills = [
 export default function Profile() {
     return (
         <>
-            <div className="h-full">
+            <div className="h-full animate__zoomInLeft animate__animated">
                 <Card width={100} height={100}>
                     <div className="flex items-start justify-center relative w-full">
                         <Image
@@ -189,30 +189,57 @@ export default function Profile() {
                     </div>
                 </Card>
             </div>
-            <div className="h-auto">
+            <div className="h-auto animate__zoomInLeft animate__animated">
                 <Card width={100} height={100}>
                     <div className="h-full flex flex-col justify-between gap-8 px-12 py-12">
-                        <div className="flex flex-wrap justify-between items-center gap-4">
-                            {skills.map((skill, index) => (
-                                <div key={index}>
-                                    <Image
-                                        src={skill.icon}
-                                        alt={skill.name}
-                                        width={skill.width}
-                                        height={skill.height}
-                                    />
+                        <h1 className='font-degular font-bold text-[#efefefcc] text-xl'>Mes préférences</h1>
+                        <div>
+                            <div>
+                                <h5 className="text-[#EFEFEF80] font-degular text-lg font-light">
+                                    Langages
+                                </h5>
+                                <div className="flex flex-wrap items-center gap-2 mt-2">
+                                    {skills.map((skill, index) => (
+                                        <div key={index} className='w-7 h-7'>
+                                            <Image
+                                                src={skill.icon}
+                                                alt={skill.name}
+                                                className='w-fit'
+                                                width={skill.width}
+                                                height={skill.height}
+                                            />
+                                        </div>
+                                    ))}
                                 </div>
-                            ))}
+                            </div>
+                            <div>
+                                <h5 className="text-[#EFEFEF80] font-degular text-lg font-light">
+                                    Langages
+                                </h5>
+                                <div className="flex flex-wrap items-center gap-2 mt-2">
+                                    {skills.map((skill, index) => (
+                                        <div key={index} className='w-7 h-7'>
+                                            <Image
+                                                src={skill.icon}
+                                                alt={skill.name}
+                                                className='w-fit'
+                                                width={skill.width}
+                                                height={skill.height}
+                                            />
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
                         <div className="flex items-center flex-col gap-4">
-                            <button className="flex w-full justify-center items-center px-8 py-4 font-roberto font-bold text-white text-xl gap-4">
+                            <button className="flex w-full justify-center items-center px-8 py-4 font-degular font-semibold text-white text-2xl gap-4">
                                 <Image
                                     src={Enveloppe}
                                     alt="Enveloppe"
                                     width={20}
                                     height={20}
                                 />
-                                <span className="mb-1">Contactez-moi</span>
+                                <span>Contactez-moi</span>
                             </button>
                         </div>
                     </div>
