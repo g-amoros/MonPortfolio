@@ -102,7 +102,7 @@ export default function AnimatedGridPattern({
 
     return (
         <>
-            <div className="absolute w-full h-full z-[-1]">
+            <div className="absolute w-full h-full z-[-1] ">
                 <div className="absolute inset-0 radial-mask"></div>
                 <div className="absolute inset-0 bg-custom-gradient opacity-[75%]"></div>
             </div>
@@ -110,7 +110,7 @@ export default function AnimatedGridPattern({
                 ref={containerRef}
                 aria-hidden="true"
                 className={cn(
-                    'pointer-events-none z-[-2] absolute inset-0 h-full w-full fill-gray-400/30 stroke-gray-400/30 bg-custom-gradient',
+                    'pointer-events-none z-[-2] absolute inset-0 h-full w-full fill-gray-400/30 stroke-gray-400/30 bg-custom-gradient ',
                     className,
                 )}
                 {...props}

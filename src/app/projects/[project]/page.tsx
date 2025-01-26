@@ -8,8 +8,7 @@ import Frameworks from '@/public/frameworks.svg';
 import GithubIcon from '@/public/githubIcon.svg';
 import { Suspense } from 'react';
 import { list } from '@vercel/blob';
-import LightGallery from '@/components/ui/lightgallery';
-import Navbar from '@/components/ui/navbar';
+// import LightGallery from '@/components/ui/lightgallery';
 import ImageE from '@/public/Projet4.png';
 
 // Pré-génération des pages statiques, pour chaque projet du fichier projects.json
@@ -62,8 +61,6 @@ export default function ProjectDetail({
 
     return (
         <>
-            <div className="2xl:w-[80%] mx-auto flex flex-col min-h-full justify-between">
-                <Navbar projectName={project.name} />
                 <div>
                     <Card width={100} height={0} borderRadius={20}>
                         <div className="grid justify-center items-center h-auto py-4">
@@ -82,8 +79,8 @@ export default function ProjectDetail({
                         </div>
                     </Card>
                 </div>
-                <div className="flex justify-between items-start gap-8 mt-8 grow">
-                    <div className="w-1/2 flex flex-col gap-8">
+                <div className="2xl:flex justify-between items-start gap-8 mt-8 grow">
+                    <div className="2xl:w-1/2 w-full flex flex-col gap-8">
                         <div className="w-full rounded-xl">
                             <Suspense fallback={<div>Chargement...</div>}>
                                 <VideoComponent fileName={project.video} />
@@ -107,7 +104,7 @@ export default function ProjectDetail({
                                 ))}
                             {/* <LightGallery photos={project.images || []} /> */}
                         </div>
-                        <div className='w-full flex justify-center items-center'>
+                        <div className="w-full flex justify-center items-center">
                             <h1
                                 className="text-base text-[#efefefcc] opacity-70 font-degular font-semibold"
                                 style={{
@@ -119,7 +116,7 @@ export default function ProjectDetail({
                             </h1>
                         </div>
                     </div>
-                    <div className="w-1/2 flex h-auto">
+                    <div className="2xl:w-1/2 w-full flex h-auto">
                         <Card width={100} height={0} borderRadius={20}>
                             <div className="p-12 grid grid-rows-[1fr,auto] h-full">
                                 <div className="flex gap-4 items-center">
@@ -154,13 +151,8 @@ export default function ProjectDetail({
                                                 <span className="font-roberto text-lg font-light text-[#FFF]">
                                                     {project.langages.map(
                                                         (langage) => (
-                                                            <span
-                                                                key={
-                                                                    langage
-                                                                }
-                                                            >
-                                                                {langage +
-                                                                    ', '}
+                                                            <span key={langage}>
+                                                                {langage + ', '}
                                                             </span>
                                                         ),
                                                     )}
@@ -215,7 +207,7 @@ export default function ProjectDetail({
                                     className="flex items-center gap-4 w-full"
                                     href={project.github}
                                 >
-                                    <button className="flex justify-center w-full items-center px-6 py-3 font-degular font-normal text-white text-lg gap-4">
+                                    <button className="button-animate flex justify-center w-full items-center px-6 py-4 font-degular font-semibold text-white text-lg gap-4">
                                         <Image
                                             src={GithubIcon}
                                             alt="Github"
@@ -229,7 +221,6 @@ export default function ProjectDetail({
                         </Card>
                     </div>
                 </div>
-            </div>
         </>
     );
 }

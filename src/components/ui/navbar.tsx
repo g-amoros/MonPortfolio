@@ -14,7 +14,7 @@ export default function Path({ projectName }: PathProps) {
 
     return (
         <>
-            <div className="flex gap-4 items-center justify-start mb-7 ">
+            <div className="flex gap-4 items-center justify-start mb-7 animate__fadeIn animate__delay-2s animate__animated">
                 <button
                     style={{ all: 'unset' }}
                     onClick={() => router.push('/')}

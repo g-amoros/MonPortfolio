@@ -2,6 +2,7 @@ import React from 'react';
 import Card from '../components/ui/card';
 import Image from 'next/image';
 import Pp from '../../public/pp.svg';
+import type { StaticImageData } from 'next/image';
 import WavingHand from '@/public/WavingHand.svg';
 import Polygon from '@/public/polygon.svg';
 import Laptop from '@/public/Laptop.svg';
@@ -22,6 +23,9 @@ import Twitter from '@/public/x.svg';
 import Instagram from '@/public/instagram.svg';
 import Youtube from '@/public/youtube.svg';
 import Tiktok from '@/public/tiktok.svg';
+import NextJS from '@/public/nextjs.svg';
+import Vite from '@/public/vite.svg';
+import Expo from '@/public/expo.svg';
 
 const socials = [
     {
@@ -109,13 +113,85 @@ const skills = {
             width: 45,
             height: 45,
         },
+        {
+            name: 'NextJS',
+            icon: NextJS,
+            width: 45,
+            height: 45,
+        },
+        {
+            name: 'Vite',
+            icon: Vite,
+            width: 45,
+            height: 45,
+        },
+        {
+            name: 'Expo',
+            icon: Expo,
+            width: 45,
+            height: 45,
+        }
     ],
+};
+
+interface profileItemProps {
+    text: string;
+    image: StaticImageData;
+    size: number;
 }
+
+const profileItem = ({ text, image, size }: profileItemProps) => {
+    return (
+        <>
+            <div className="flex items-center">
+                <div className="relative">
+                    <Image
+                        src={Polygon}
+                        alt="Polygon"
+                        width={60}
+                        height={60}
+                        className="min-w-14"
+                    />
+                    <Image
+                        src={image}
+                        alt="Image"
+                        width={size}
+                        height={size}
+                        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                    />
+                </div>
+                <div className="ml-4">
+                    <span className="font-roberto font-black text-white text-sm">
+                        {text}
+                    </span>
+                </div>
+            </div>
+        </>
+    );
+};
+
+const profileItems = [
+    {
+        text: 'Creation de site web dynamiques et performants',
+        image: Laptop,
+        size: 20,
+    },
+    {
+        text: 'Fondation solide avec backend fiable et évolutif',
+        image: Cabinet,
+        size: 20,
+    },
+    {
+        text: 'Interfaces centrées sur l’utilisateur pour expérience exceptionnelle',
+        image: Palette,
+        size: 25,
+    },
+];
 
 export default function Profile() {
     return (
         <>
-            <div className="h-full animate__zoomInLeft animate__animated">
+            <div className="h-full animate__backInLeft animate__animated w-full md:w-1/2 lg:w-full">
                 <Card width={100} height={100}>
                     <div className="flex items-start justify-center relative w-full">
                         <Image
@@ -159,82 +235,13 @@ export default function Profile() {
                         </p>
                     </div>
                     <div className="flex flex-col justify-center flex-shrink-0 px-12 gap-4 my-10">
-                        <div className="flex items-center">
-                            <div className="relative">
-                                <Image
-                                    src={Polygon}
-                                    alt="Polygon"
-                                    width={60}
-                                    height={60}
-                                    className="min-w-14"
-                                />
-                                <Image
-                                    src={Laptop}
-                                    alt="Laptop"
-                                    width={20}
-                                    height={20}
-                                    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-                                />
-                            </div>
-                            <div className="ml-4">
-                                <span className="font-roberto font-black text-white text-sm">
-                                    Creation de site web dynamiques et
-                                    performants
-                                </span>
-                            </div>
-                        </div>
-                        <div className="flex items-center">
-                            <div className="relative">
-                                <Image
-                                    src={Polygon}
-                                    alt="Polygon"
-                                    width={60}
-                                    height={60}
-                                    className="min-w-14"
-                                />
-                                <Image
-                                    src={Cabinet}
-                                    alt="Cabinet"
-                                    width={20}
-                                    height={20}
-                                    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-                                />
-                            </div>
-                            <div className="ml-4">
-                                <span className="font-roberto font-black text-white text-sm">
-                                    Fondation solide avec backend fiable et
-                                    évolutif
-                                </span>
-                            </div>
-                        </div>
-                        <div className="flex items-center">
-                            <div className="relative">
-                                <Image
-                                    src={Polygon}
-                                    alt="Polygon"
-                                    width={60}
-                                    height={60}
-                                    className="min-w-14"
-                                />
-                                <Image
-                                    src={Palette}
-                                    alt="Palette"
-                                    width={25}
-                                    height={25}
-                                    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-                                />
-                            </div>
-                            <div className="ml-4">
-                                <span className="font-roberto font-black text-white text-sm">
-                                    Interfaces centrées sur l’utilisateur pour
-                                    expérience exceptionnelle
-                                </span>
-                            </div>
-                        </div>
+                        {profileItems.map((item, index) => (
+                            <div key={index}>{profileItem(item)}</div>
+                        ))}
                     </div>
                 </Card>
             </div>
-            <div className="h-auto animate__zoomInLeft animate__animated">
+            <div className="h-fit animate__backInLeft animate__animated w-full md:w-1/2 lg:w-full">
                 <Card width={100} height={100}>
                     <div className="h-full flex flex-col justify-between gap-8 px-12 py-12">
                         <h1
@@ -253,11 +260,11 @@ export default function Profile() {
                                 </h5>
                                 <div className="flex flex-wrap items-center gap-2 mt-2">
                                     {skills.langages.map((skill, index) => (
-                                        <div key={index} className='w-7 h-7'>
+                                        <div key={index} className="w-7 h-7">
                                             <Image
                                                 src={skill.icon}
                                                 alt={skill.name}
-                                                className='w-fit'
+                                                className="w-fit"
                                                 width={skill.width}
                                                 height={skill.height}
                                             />
@@ -265,17 +272,17 @@ export default function Profile() {
                                     ))}
                                 </div>
                             </div>
-                            <div className='mt-4 mb-4'>
+                            <div className="mt-4 mb-4">
                                 <h5 className="text-[#EFEFEF80] font-degular text-lg font-light">
                                     Frameworks
                                 </h5>
                                 <div className="flex flex-wrap items-center gap-2 mt-2">
                                     {skills.frameworks.map((skill, index) => (
-                                        <div key={index} className='w-7 h-7'>
+                                        <div key={index} className="w-7 h-7">
                                             <Image
                                                 src={skill.icon}
                                                 alt={skill.name}
-                                                className='w-fit'
+                                                className="w-fit"
                                                 width={skill.width}
                                                 height={skill.height}
                                             />
@@ -285,7 +292,7 @@ export default function Profile() {
                             </div>
                         </div>
                         <div className="flex items-center flex-col gap-4">
-                            <button className="flex w-full justify-center items-center px-8 py-4 font-degular font-semibold text-white text-2xl gap-4">
+                            <button className="button-animate flex w-full justify-center items-center px-8 py-4 font-degular font-semibold text-white text-xl gap-4">
                                 <Image
                                     src={Enveloppe}
                                     alt="Enveloppe"

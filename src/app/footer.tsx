@@ -9,7 +9,11 @@ export default function Footer() {
                         Tous droits réservés - {currentYear}
                     </h6>
                     <h6 className="font-roberto font-light text-[#EFEFEF80]">
-                        Conçu et développé par <span className='font-bold font-degular text-lg'>Gaël AMOROS</span>.
+                        Conçu et développé par{' '}
+                        <span className="font-bold font-degular text-lg">
+                            Gaël AMOROS
+                        </span>
+                        .
                     </h6>
                 </div>
             </div>
