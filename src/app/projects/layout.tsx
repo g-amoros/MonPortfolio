@@ -1,3 +1,4 @@
+
 import Profile from '../profile';
 import React from 'react';
 import Footer from '../footer';
@@ -16,7 +17,6 @@ export default function ProjectsLayout({
                 </div>
                 <div className="h-auto w-full mx-auto flex flex-col min-h-full justify-between">
                     <div className="2xl:w-[80%] mx-auto flex flex-col min-h-full">
-                        <Navbar />
                         {children}
                     </div>
                 </div>

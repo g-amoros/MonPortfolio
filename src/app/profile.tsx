@@ -228,7 +228,7 @@ export default function Profile() {
 
                         <p className="text-[#efefef] text-sm font-roberto font-normal mt-3">
                             Actuellement étudiant en informatique & développeur
-                            Web basé à Avignon,{' '}
+                            Web basé à Avignon,{' '}<br></br>
                             <span className="font-bold font-roberto">
                                 voici ce que je peux vous proposer :
                             </span>
