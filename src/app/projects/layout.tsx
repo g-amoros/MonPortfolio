@@ -10,8 +10,8 @@ export default function ProjectsLayout({
 }>) {
     return (
         <div className='px-0 sm:px-12 md:px-0'>
-            <div className="grid lg:flex px-6 sm:px-16 gap-16 pb-8 pt-20 items-stretch">
-                <div className="grid md:flex lg:grid gap-8 h-fit lg:max-w-[25rem] min-w-[25rem]">
+            <div className="grid lg:flex px-3 sm:px-16 gap-16 pb-8 pt-20 items-stretch">
+                <div className="grid md:flex lg:grid gap-8 h-fit lg:max-w-[25rem] sm:min-w-[25rem]">
                     <Profile />
                 </div>
                 <div className="h-auto w-full mx-auto flex flex-col min-h-full justify-between">
@@ -21,7 +21,7 @@ export default function ProjectsLayout({
                     </div>
                 </div>
             </div>
-            <div className="flex px-16 gap-16 pb-8 items-stretch ">
+            <div className="flex gap-16 pb-8 items-stretch ">
                 <Footer />
             </div>
         </div>

@@ -79,8 +79,8 @@ export default function ProjectDetail({
                         </div>
                     </Card>
                 </div>
-                <div className="2xl:flex justify-between items-start gap-8 mt-8 grow">
-                    <div className="2xl:w-1/2 w-full flex flex-col gap-8">
+                <div className="xl:flex justify-between items-start gap-8 mt-8 grow">
+                    <div className="xl:w-1/2 w-full flex flex-col gap-8">
                         <div className="w-full rounded-xl">
                             <Suspense fallback={<div>Chargement...</div>}>
                                 <VideoComponent fileName={project.video} />
@@ -104,7 +104,7 @@ export default function ProjectDetail({
                                 ))}
                             {/* <LightGallery photos={project.images || []} /> */}
                         </div>
-                        <div className="w-full flex justify-center items-center">
+                        <div className="w-full flex justify-center items-center mb-6">
                             <h1
                                 className="text-base text-[#efefefcc] opacity-70 font-degular font-semibold"
                                 style={{
@@ -116,7 +116,7 @@ export default function ProjectDetail({
                             </h1>
                         </div>
                     </div>
-                    <div className="2xl:w-1/2 w-full flex h-auto">
+                    <div className="xl:w-1/2 w-full flex h-auto">
                         <Card width={100} height={0} borderRadius={20}>
                             <div className="p-12 grid grid-rows-[1fr,auto] h-full">
                                 <div className="flex gap-4 items-center">

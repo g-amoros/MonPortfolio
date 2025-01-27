@@ -9,11 +9,11 @@ import { BlurFade } from '@/components/ui/blur-fade';
 export default function Projects() {
     return (
         <>
-                <div className="flex flex-wrap -mx-4">
+                <div className="flex flex-wrap sm:-mx-4">
                     {projectsData.map((project, index) => (
                         <div
                             key={project.id}
-                            className="w-full lg:w-1/2 2xl:w-1/3 px-4 mb-8"
+                            className="w-full lg:w-1/2 2xl:w-1/3 sm:px-4 mb-8"
                         >
                             <BlurFade delay={2.25 + index * 0.2} inView>
                                 <Card

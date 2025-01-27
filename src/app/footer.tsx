@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <>
             <div className="w-full h-auto">
-                <div className="grid text-center gap-1 text-base justify-center items-center mx-auto w-[80%] h-full">
+                <div className="grid text-center gap-1 text-base justify-center items-center mx-auto w-full h-full">
                     <h6 className="font-roberto font-light text-[#EFEFEF80]">
                         Tous droits réservés - {currentYear}
                     </h6>
