@@ -2,7 +2,6 @@
 import Profile from '../profile';
 import React from 'react';
 import Footer from '../footer';
-import Navbar from '@/components/ui/navbar';
 
 export default function ProjectsLayout({
     children,

@@ -20,7 +20,7 @@ export default function Projects() {
                                 width={0}
                                 height={0}
                                 borderRadius={20}
-                                css={'hover:bg-custom-gradient-card'}
+                                css={'hover:bg-custom-gradient-card transform hover:scale-[1.02] transition-transform'}
                             >
                                 <Link
                                     href={`/projects/${project.id}`}

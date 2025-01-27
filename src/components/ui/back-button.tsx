@@ -1,7 +1,6 @@
 'use client'
 import Image from 'next/image';
 import Arrow from '@/public/arrow.svg';
-import Card from '@/components/ui/card';
 import { useRouter } from 'next/navigation';
 
 export default function BackButton() {
@@ -9,8 +8,7 @@ export default function BackButton() {
     return (
         <>
             <button className='!absolute !left-8 ' style={{ all: 'unset' }} onClick={() => router.push('/projects')}>
-                <Card width={100} height={0} borderRadius={15}>
-                    <div className="flex justify-center items-center p-2 cursor-pointer">
+                    <div className="backbutton flex animate__fadeIn animate__animated transition-transform justify-center items-center p-2 cursor-pointer border-[2px] border-[#ffffff4e] rounded-xl">
                         <Image
                             src={Arrow}
                             alt="Image"
@@ -19,7 +17,6 @@ export default function BackButton() {
                             className="w-7 h-7 rounded-xl"
                         />
                     </div>
-                </Card>
             </button>
         </>
     )

@@ -126,8 +126,8 @@ export default function ProjectDetail({
                                 <Image
                                     src={Frame}
                                     alt="Frame"
-                                    width={40}
-                                    height={40}
+                                    width={35}
+                                    height={35}
                                 />
                                 <h1 className="text-[#FFF] font-degular font-bold text-xl">
                                     Résumé du projet :
@@ -148,8 +148,8 @@ export default function ProjectDetail({
                                             <Image
                                                 src={Langages}
                                                 alt="Frame"
-                                                width={40}
-                                                height={40}
+                                                width={35}
+                                                height={35}
                                             />
                                             <span className="font-roberto text-lg font-light text-[#FFF]">
                                                 {project.langages.map(
@@ -171,8 +171,8 @@ export default function ProjectDetail({
                                         <Image
                                             src={Frameworks}
                                             alt="Frame"
-                                            width={40}
-                                            height={40}
+                                            width={35}
+                                            height={35}
                                         />
                                         <span className="font-roberto text-lg font-light text-[#FFF]">
                                             React, Vue, Angular, NodeJS
@@ -187,8 +187,8 @@ export default function ProjectDetail({
                                         <Image
                                             src={Outils}
                                             alt="Frame"
-                                            width={40}
-                                            height={40}
+                                            width={35}
+                                            height={35}
                                         />
                                         <span className="font-roberto text-lg font-light text-[#FFF]">
                                             Git, Webpack, DockerA
@@ -197,12 +197,15 @@ export default function ProjectDetail({
                                 </div>
                             </div>
                             {project.url && (
-                                <div className="flex justify-center w-full my-6">
-                                    <h4 className="font-roberto font-normal text-[#EFEFEF80]">
+                                <div className="flex justify-center w-full my-6 text-base">
+                                    <h4 className="font-degular font-normal text-[#EFEFEF80]">
                                         Site :{' '}
-                                        <span className="text-[#FFF] underline underline-offset-4 ">
+                                        <a 
+                                            className="text-[#FFF] link"
+                                            href={project.url} target="_blank" rel="noreferrer"
+                                        >
                                             {project.url}
-                                        </span>{' '}
+                                        </a>{' '}
                                     </h4>
                                 </div>
                             )}
