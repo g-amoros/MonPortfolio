@@ -15,12 +15,14 @@ export default function Projects() {
                         key={project.id}
                         className="w-full lg:w-1/2 xl:w-1/3 sm:px-4 mb-8"
                     >
-                        <BlurFade delay={0.20 + index * 0.2} inView>
+                        <BlurFade delay={0.2 + index * 0.2} inView>
                             <Card
                                 width={0}
                                 height={0}
                                 borderRadius={20}
-                                css={'hover:bg-custom-gradient-card transform hover:scale-[1.02] transition-transform'}
+                                css={
+                                    'hover:bg-custom-gradient-card transform hover:scale-[1.02] transition-transform'
+                                }
                             >
                                 <Link
                                     href={`/${project.id}`}

@@ -9,86 +9,86 @@ import Profile from './profile';
 import Footer from './footer';
 
 const Roberto = localFont({
-	src: [
-		{
-			path: 'fonts/Roberto/RobertoSans-Bold.ttf',
-			weight: '700',
-			style: 'normal',
-		},
-		{
-			path: 'fonts/Roberto/RobertoSans-Medium.ttf',
-			weight: '500',
-			style: 'normal',
-		},
-		{
-			path: 'fonts/Roberto/RobertoSans-Regular.ttf',
-			weight: '400',
-			style: 'normal',
-		},
-	],
-	variable: '--font-roberto',
+    src: [
+        {
+            path: 'fonts/Roberto/RobertoSans-Bold.ttf',
+            weight: '700',
+            style: 'normal',
+        },
+        {
+            path: 'fonts/Roberto/RobertoSans-Medium.ttf',
+            weight: '500',
+            style: 'normal',
+        },
+        {
+            path: 'fonts/Roberto/RobertoSans-Regular.ttf',
+            weight: '400',
+            style: 'normal',
+        },
+    ],
+    variable: '--font-roberto',
 });
 
 const Degular = localFont({
-	src: [
-		{
-			path: 'fonts/Degular/Degular-Bold.otf',
-			weight: '700',
-			style: 'normal',
-		},
-		{
-			path: 'fonts/Degular/Degular-Semibold.otf',
-			weight: '600',
-			style: 'normal',
-		},
-		{
-			path: 'fonts/Degular/Degular-Black.otf',
-			weight: '900',
-			style: 'normal',
-		},
-		{
-			path: 'fonts/Degular/Degular-Medium.otf',
-			weight: '500',
-			style: 'normal',
-		},
-	],
-	variable: '--font-degular',
+    src: [
+        {
+            path: 'fonts/Degular/Degular-Bold.otf',
+            weight: '700',
+            style: 'normal',
+        },
+        {
+            path: 'fonts/Degular/Degular-Semibold.otf',
+            weight: '600',
+            style: 'normal',
+        },
+        {
+            path: 'fonts/Degular/Degular-Black.otf',
+            weight: '900',
+            style: 'normal',
+        },
+        {
+            path: 'fonts/Degular/Degular-Medium.otf',
+            weight: '500',
+            style: 'normal',
+        },
+    ],
+    variable: '--font-degular',
 });
 
 export const metadata: Metadata = {
-	title: 'Portfolio - Gaël Amoros | Développeur Web',
-	description:
-		'Portfolio de Gaël Amoros, étudiant en informatique et développeur Web basé à Avignon.',
+    title: 'Portfolio - Gaël Amoros | Développeur Web',
+    description:
+        'Portfolio de Gaël Amoros, étudiant en informatique et développeur Web basé à Avignon.',
 };
 
 export default function RootLayout({
-	children,
+    children,
 }: Readonly<{
-	children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-	return (
-		<html lang="en">
-			<AOSInit />
-			<body
-				className={`${Roberto.variable} ${Degular.variable} relative `}
-			>
-				<Background />
-				<div className='px-0 sm:px-12 md:px-0'>
-            <div className="grid lg:flex px-3 sm:px-16 gap-16 pb-8 pt-20 items-stretch">
-                <div className="grid md:flex lg:grid gap-8 h-fit lg:max-w-[25rem] sm:min-w-[25rem]">
-                    <Profile />
-                </div>
-                <div className="h-auto w-full mx-auto flex flex-col min-h-full justify-between">
-                    <div className="2xl:w-[80%] mx-auto flex flex-col min-h-full">
-                        {children}
+    return (
+        <html lang="en">
+            <AOSInit />
+            <body
+                className={`${Roberto.variable} ${Degular.variable} relative `}
+            >
+                <Background />
+                <div className="px-0 sm:px-12 md:px-0">
+                    <div className="grid lg:flex px-3 sm:px-16 gap-16 pb-8 pt-20 items-stretch">
+                        <div className="grid md:flex lg:grid gap-8 h-fit lg:max-w-[25rem] sm:min-w-[25rem]">
+                            <Profile />
+                        </div>
+                        <div className="h-auto w-full mx-auto flex flex-col min-h-full justify-between">
+                            <div className="2xl:w-[80%] mx-auto flex flex-col min-h-full">
+                                {children}
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex gap-16 pb-8 items-stretch ">
+                        <Footer />
                     </div>
                 </div>
-            </div>
-            <div className="flex gap-16 pb-8 items-stretch ">
-                <Footer />
-            </div>
-        </div>
-			</body>
-		</html>
-	);
+            </body>
+        </html>
+    );
 }

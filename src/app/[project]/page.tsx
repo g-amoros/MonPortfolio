@@ -44,17 +44,43 @@ async function VideoComponent({ fileName }: { fileName: string }) {
     );
 }
 
+const tools = () => {
+    return (
+        <>
+            <div>
+                <h5 className="text-[#EFEFEF80] font-degular text-sm font-light">
+                    Langages
+                </h5>
+                <div className="flex items-center gap-4 mt-1">
+                    <Image
+                        src={Langages}
+                        alt="Frame"
+                        width={35}
+                        height={35}
+                    />
+                    <span className="font-roberto text-lg font-light text-[#FFF]">
+                        {/*      {project.langages.map(
+                            (langage) => (
+                                <span key={langage}>
+                                    {langage + ', '}
+                                </span>
+                            ),
+                        )} */}
+                    </span>
+                </div>
+            </div>
+        </>
+    )
+}
+
 // Détails de chacun des projets
-export default async function ProjectDetail(
-    props: {
-        params: Promise<{ project: string }>;
-    }
-) {
+export default async function ProjectDetail(props: {
+    params: Promise<{ project: string }>;
+}) {
     const params = await props.params;
     const project = projectsData.find(
         (p) => p.id.toString() === params.project,
     );
-
 
     //! Mettre en place une page d'erreur 404
     if (!project) {
@@ -182,7 +208,7 @@ export default async function ProjectDetail(
                                 </div>
                                 <div className="mt-4">
                                     <h5 className="text-[#EFEFEF80] font-degular text-sm font-light">
-                                        Outils
+                                        Bases de données
                                     </h5>
                                     <div className="flex items-center gap-4 mt-1">
                                         <Image
@@ -201,9 +227,11 @@ export default async function ProjectDetail(
                                 <div className="flex justify-center w-full my-6 text-base">
                                     <h4 className="font-degular font-normal text-[#EFEFEF80]">
                                         Site :{' '}
-                                        <a 
+                                        <a
                                             className="text-[#FFF] link"
-                                            href={project.url} target="_blank" rel="noreferrer"
+                                            href={project.url}
+                                            target="_blank"
+                                            rel="noreferrer"
                                         >
                                             {project.url}
                                         </a>{' '}

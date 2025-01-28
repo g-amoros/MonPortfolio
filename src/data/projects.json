@@ -5,7 +5,7 @@
         "subtitle": "Un site vitrine pour un SAAS de VTC",
         "description": "Conception d'un site vitrine pour un SAAS de VTC, visant à présenter les services proposés et attirer de nouveaux clients.",
         "date": "01/2025",
-        "image": "/Projet1.png",
+        "image": "/Projects/Project1/Projet1.png",
         "images": [
             "/Projet3.png",
             "/Projet3.png",
@@ -15,11 +15,19 @@
             "/Projet3.png"
         ],
         "video": "Projet1.mov",
-        "langages": ["HTML", "CSS", "JavaScript, Php, Bootstrap"],
-        "frameworks": null,
-        "outils": null,
+        "langages": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "TypeScript"
+        ],
+        "frameworks": [
+            "Astro",
+            "ReactJS",
+            "Node.js"
+        ],
         "base_de_donnees": null,
-        "url": "https://www.bankai-psd.fr/",
+        "url": "https://www.app.chauffleet.com/",
         "github": "https://www.bankai-psd.fr/"
     },
     {
@@ -28,7 +36,7 @@
         "subtitle": "Un site vitrine pour un graphiste freelance",
         "description": "Conception d'un portfolio responsive pour un graphiste freelance, visant à présenter ses créations et attirer de nouveaux clients. Le site met l'accent sur l'accessibilité et la performance.",
         "date": "10/20/2023",
-        "image": "/Projet2.png",
+        "image": "/Projects/Project2/Projet2.png",
         "images": [
             "/Projet3.png",
             "/Projet3.png",
@@ -38,9 +46,12 @@
             "/Projet3.png"
         ],
         "video": "Projet1.mov",
-        "langages": ["HTML", "CSS", "JavaScript, Php, Bootstrap"],
+        "langages": [
+            "HTML",
+            "CSS",
+            "JavaScript, Php, Bootstrap"
+        ],
         "frameworks": null,
-        "outils": null,
         "base_de_donnees": null,
         "url": "https://www.bankai-psd.fr/",
         "github": "https://www.bankai-psd.fr/"
@@ -51,7 +62,7 @@
         "subtitle": "Un site e-commerce pour une boutique de composants informatiques",
         "description": "Site e-commerce spécialisé dans les composants informatiques, développé avec ReactJS, Node.js et Firebase. Interface responsive, gestion du panier, recherche de produits et authentification sécurisée intégrées pour une expérience utilisateur optimisée.",
         "date": "10/20/2023",
-        "image": "/Projet3.png",
+        "image": "/Projects/Project3/Projet3.png",
         "images": [
             "@/public/Projet3-DypYubmy.png",
             "@/public/Projet3-DypYubmy.png",
@@ -61,10 +72,18 @@
             "@/public/Projet3-DypYubmy.png"
         ],
         "video": "Projet2.mov",
-        "langages": ["HTML", "CSS", "JavaScript"],
-        "frameworks": ["ReactJS", "Node.js"],
-        "outils": ["Visual Studio Code"],
-        "base_de_donnees": ["Firebase"],
+        "langages": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "frameworks": [
+            "ReactJS",
+            "Node.js"
+        ],
+        "base_de_donnees": [
+            "Firebase"
+        ],
         "url": null,
         "github": ""
     },
@@ -74,7 +93,7 @@
         "subtitle": "Un site vitrine pour un graphiste freelance",
         "description": "Création d'un site vitrine pour une boulangerie située à Avignon. Le site est responsive et a été réalisé en HTML, CSS, Javascript et PHP, avec l'utilisation du framework Bootstrap pour la mise en forme.",
         "date": "10/20/2023",
-        "image": "/Projet4.png",
+        "image": "/Projects/Project4/Projet4.png",
         "images": [
             "@/public/Projet3-DypYubmy.png",
             "@/public/Projet3-DypYubmy.png",
@@ -84,9 +103,13 @@
             "@/public/Projet3-DypYubmy.png"
         ],
         "video": "Projet3.mp4",
-        "langages": ["HTML", "CSS", "JavaScript", "PHP"],
+        "langages": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "PHP"
+        ],
         "frameworks": null,
-        "outils": null,
         "base_de_donnees": null,
         "url": "https://bankai-psd.netlify.app/",
         "github": ""
@@ -97,7 +120,7 @@
         "subtitle": "Un site vitrine pour un graphiste freelance",
         "description": "Création d'une plate-forme de monitoring pour un parc informatique sous Linux permettant de gérer et visualiser les données de plusieurs serveurs en temps réel. Un site permet de visualiser les données de manière graphique.",
         "date": "10/20/2023",
-        "image": "/Projet5.png",
+        "image": "/Projects/Project5/Projet5.png",
         "images": [
             "@/public/Projet3-DypYubmy.png",
             "@/public/Projet3-DypYubmy.png",
@@ -107,9 +130,15 @@
             "@/public/Projet3-DypYubmy.png"
         ],
         "video": "Projet4.mov",
-        "langages": ["HTML", "CSS", "JavaScript", "PHP", "Python", "Bash"],
+        "langages": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "PHP",
+            "Python",
+            "Bash"
+        ],
         "frameworks": null,
-        "outils": null,
         "base_de_donnees": null,
         "url": null,
         "github": "https://github.com/MisterGawel/Parc-Informatique"
@@ -120,7 +149,7 @@
         "subtitle": "Un site vitrine pour un graphiste freelance",
         "description": "Conception d'un portfolio responsive pour un graphiste freelance, visant à présenter ses créations et attirer de nouveaux clients. Le site met l'accent sur l'accessibilité et la performance.",
         "date": "10/20/2023",
-        "image": "/Projet6.png",
+        "image": "/Projects/Project6/Projet6.png",
         "images": [
             "@/public/Projet3-DypYubmy.png",
             "@/public/Projet3-DypYubmy.png",
@@ -130,10 +159,19 @@
             "@/public/Projet3-DypYubmy.png"
         ],
         "video": "Projet5.mp4",
-        "langages": ["HTML", "CSS", "JavaScript"],
-        "frameworks": ["React", "Bootstrap"],
-        "outils": ["Visual Studio Code", "Git", "GitHub"],
-        "base_de_donnees": ["MongoDB", "MySQL"],
+        "langages": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "frameworks": [
+            "React",
+            "Bootstrap"
+        ],
+        "base_de_donnees": [
+            "MongoDB",
+            "MySQL"
+        ],
         "url": "https://bankai-psd.netlify.app/",
         "github": ""
     },
@@ -143,7 +181,7 @@
         "subtitle": "Un site vitrine pour un graphiste freelance",
         "description": "Conception d'un portfolio responsive pour un graphiste freelance, visant à présenter ses créations et attirer de nouveaux clients. Le site met l'accent sur l'accessibilité et la performance.",
         "date": "10/20/2023",
-        "image": "/Projet7.png",
+        "image": "/Projects/Project7/Projet7.png",
         "images": [
             "@/public/Projet3-DypYubmy.png",
             "@/public/Projet3-DypYubmy.png",
@@ -153,10 +191,19 @@
             "@/public/Projet3-DypYubmy.png"
         ],
         "video": "Projet5.mp4",
-        "langages": ["HTML", "CSS", "JavaScript"],
-        "frameworks": ["React", "Bootstrap"],
-        "outils": ["Visual Studio Code", "Git", "GitHub"],
-        "base_de_donnees": ["MongoDB", "MySQL"],
+        "langages": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "frameworks": [
+            "React",
+            "Bootstrap"
+        ],
+        "base_de_donnees": [
+            "MongoDB",
+            "MySQL"
+        ],
         "url": "https://bankai-psd.netlify.app/",
         "github": ""
     }

@@ -130,7 +130,7 @@ const skills = {
             icon: Expo,
             width: 45,
             height: 45,
-        }
+        },
     ],
 };
 
@@ -182,7 +182,7 @@ const profileItems = [
         size: 20,
     },
     {
-        text: 'Création d\'interfaces intuitives pour une expérience optimale.',
+        text: "Création d'interfaces intuitives pour une expérience optimale.",
         image: Palette,
         size: 25,
     },
@@ -228,7 +228,7 @@ export default function Profile() {
 
                         <p className="text-[#efefef] text-sm font-roberto font-normal mt-3">
                             Actuellement étudiant en informatique & développeur
-                            Web basé à Avignon,{' '}<br></br>
+                            Web basé à Avignon, <br></br>
                             <span className="font-bold font-roberto">
                                 voici ce que je peux vous proposer :
                             </span>
