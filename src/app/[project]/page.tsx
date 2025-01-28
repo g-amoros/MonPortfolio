@@ -8,7 +8,6 @@ import Frameworks from '@/public/frameworks.svg';
 import GithubIcon from '@/public/githubIcon.svg';
 import { Suspense } from 'react';
 import { list } from '@vercel/blob';
-// import LightGallery from '@/components/ui/lightgallery';
 import ImageE from '@/public/Projet4.png';
 import BackButton from '@/components/ui/back-button';
 
@@ -46,11 +45,12 @@ async function VideoComponent({ fileName }: { fileName: string }) {
 }
 
 // Détails de chacun des projets
-export default async function ProjectDetail({
-    params,
-}: {
-    params: { project: string };
-}) {
+export default async function ProjectDetail(
+    props: {
+        params: Promise<{ project: string }>;
+    }
+) {
+    const params = await props.params;
     const project = projectsData.find(
         (p) => p.id.toString() === params.project,
     );
@@ -105,6 +105,7 @@ export default async function ProjectDetail({
                                     />
                                 </div>
                             ))}
+
                         {/* <LightGallery photos={project.images || []} /> */}
                     </div>
                     <div className="w-full flex justify-center items-center mb-6">

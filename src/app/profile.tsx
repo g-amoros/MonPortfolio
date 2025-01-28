@@ -177,12 +177,12 @@ const profileItems = [
         size: 20,
     },
     {
-        text: 'Fondation solide avec backend fiable et évolutif',
+        text: 'Des fondations solides avec un backend fiable et évolutif',
         image: Cabinet,
         size: 20,
     },
     {
-        text: 'Interfaces centrées sur l’utilisateur pour expérience exceptionnelle',
+        text: 'Création d\'interfaces intuitives pour une expérience optimale.',
         image: Palette,
         size: 25,
     },
