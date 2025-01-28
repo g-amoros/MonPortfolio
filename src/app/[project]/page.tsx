@@ -8,8 +8,10 @@ import Frameworks from '@/public/frameworks.svg';
 import GithubIcon from '@/public/githubIcon.svg';
 import { Suspense } from 'react';
 import { list } from '@vercel/blob';
-import ImageE from '@/public/Projet4.png';
 import BackButton from '@/components/ui/back-button';
+import "react-photo-album/rows.css";
+import LightGallery from '@/components/ui/lightgallery';
+import Skeleton from '@mui/material/Skeleton';
 
 // Pré-génération des pages statiques, pour chaque projet du fichier projects.json
 export async function generateStaticParams() {
@@ -32,7 +34,7 @@ async function VideoComponent({ fileName }: { fileName: string }) {
         <video
             controls
             preload="none"
-            aria-label="Video player"
+            aria-label="Project video"
             autoPlay
             loop
             muted
@@ -44,34 +46,46 @@ async function VideoComponent({ fileName }: { fileName: string }) {
     );
 }
 
-const tools = () => {
-    return (
-        <>
-            <div>
-                <h5 className="text-[#EFEFEF80] font-degular text-sm font-light">
-                    Langages
-                </h5>
-                <div className="flex items-center gap-4 mt-1">
-                    <Image
-                        src={Langages}
-                        alt="Frame"
-                        width={35}
-                        height={35}
-                    />
-                    <span className="font-roberto text-lg font-light text-[#FFF]">
-                        {/*      {project.langages.map(
-                            (langage) => (
-                                <span key={langage}>
-                                    {langage + ', '}
-                                </span>
-                            ),
-                        )} */}
-                    </span>
-                </div>
-            </div>
-        </>
-    )
+interface ToolsProps {
+    langages?: string[] | null;
+    frameworks?: string[] | null;
+    base_de_donnees?: string[] | null;
 }
+
+const Tools = ({ langages, frameworks, base_de_donnees }: ToolsProps) => {
+    const toolCategories = {
+        Langages: langages,
+        Frameworks: frameworks,
+        "Bases de données": base_de_donnees,
+    };
+
+    return (
+        <div>
+            {Object.entries(toolCategories).map(([category, items]) => (
+                items && (
+                    <div key={category} className="mb-4">
+                        <h5 className="text-[#EFEFEF80] font-degular text-sm font-light">
+                            {category}
+                        </h5>
+                        <div className="flex items-center gap-4 mt-1">
+                            <Image
+                                src={category === "Langages" ? Langages : category === "Frameworks" ? Frameworks : Outils}
+                                alt={category}
+                                width={35}
+                                height={35}
+                            />
+                            <span className="font-roberto text-lg font-light text-[#FFF]">
+                                {items}
+                            </span>
+                        </div>
+                    </div>
+                )
+            ))}
+        </div>
+    );
+};
+
+
 
 // Détails de chacun des projets
 export default async function ProjectDetail(props: {
@@ -86,6 +100,8 @@ export default async function ProjectDetail(props: {
     if (!project) {
         return <div>Projet non trouvé</div>;
     }
+
+
 
     return (
         <>
@@ -111,29 +127,11 @@ export default async function ProjectDetail(props: {
             <div className="xl:flex justify-between items-start gap-8 mt-8 grow">
                 <div className="xl:w-1/2 w-full flex flex-col gap-8">
                     <div className="w-full rounded-xl">
-                        <Suspense fallback={<div>Chargement...</div>}>
+                        <Suspense fallback={<Skeleton variant="rectangular" className='w-full min-h-full' />}>
                             <VideoComponent fileName={project.video} />
                         </Suspense>
                     </div>
-                    <div className="flex flex-wrap w-full gap-2 justify-between">
-                        {project.images &&
-                            project.images.map((image, index) => (
-                                <div
-                                    className="w-[calc(33.33%-8px)]"
-                                    key={index}
-                                >
-                                    <Image
-                                        src={ImageE}
-                                        alt="Image"
-                                        className="w-full h-auto rounded-[15px]"
-                                        width={66}
-                                        height={66}
-                                    />
-                                </div>
-                            ))}
-
-                        {/* <LightGallery photos={project.images || []} /> */}
-                    </div>
+                    <LightGallery photos={project.images} />
                     <div className="w-full flex justify-center items-center mb-6">
                         <h1
                             className="text-base text-[#efefefcc] opacity-70 font-degular font-semibold"
@@ -166,62 +164,7 @@ export default async function ProjectDetail(props: {
                                 </p>
                             </div>
                             <div className="my-8">
-                                {project.langages && (
-                                    <div>
-                                        <h5 className="text-[#EFEFEF80] font-degular text-sm font-light">
-                                            Langages
-                                        </h5>
-                                        <div className="flex items-center gap-4 mt-1">
-                                            <Image
-                                                src={Langages}
-                                                alt="Frame"
-                                                width={35}
-                                                height={35}
-                                            />
-                                            <span className="font-roberto text-lg font-light text-[#FFF]">
-                                                {project.langages.map(
-                                                    (langage) => (
-                                                        <span key={langage}>
-                                                            {langage + ', '}
-                                                        </span>
-                                                    ),
-                                                )}
-                                            </span>
-                                        </div>
-                                    </div>
-                                )}
-                                <div className="mt-4">
-                                    <h5 className="text-[#EFEFEF80] font-degular text-sm font-light">
-                                        Frameworks
-                                    </h5>
-                                    <div className="flex items-center gap-4 mt-1">
-                                        <Image
-                                            src={Frameworks}
-                                            alt="Frame"
-                                            width={35}
-                                            height={35}
-                                        />
-                                        <span className="font-roberto text-lg font-light text-[#FFF]">
-                                            React, Vue, Angular, NodeJS
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="mt-4">
-                                    <h5 className="text-[#EFEFEF80] font-degular text-sm font-light">
-                                        Bases de données
-                                    </h5>
-                                    <div className="flex items-center gap-4 mt-1">
-                                        <Image
-                                            src={Outils}
-                                            alt="Frame"
-                                            width={35}
-                                            height={35}
-                                        />
-                                        <span className="font-roberto text-lg font-light text-[#FFF]">
-                                            Git, Webpack, DockerA
-                                        </span>
-                                    </div>
-                                </div>
+                                <Tools langages={project.langages} frameworks={project.frameworks} base_de_donnees={project.base_de_donnees} />
                             </div>
                             {project.url && (
                                 <div className="flex justify-center w-full my-6 text-base">

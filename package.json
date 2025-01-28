@@ -10,6 +10,9 @@
         "format": "prettier --write ."
     },
     "dependencies": {
+        "@emotion/react": "^11.14.0",
+        "@emotion/styled": "^11.14.0",
+        "@mui/material": "^6.4.1",
         "@vercel/blob": "^0.27.1",
         "animate.css": "^4.1.1",
         "aos": "^2.3.4",
@@ -24,9 +27,11 @@
         "react": "^19.0.0",
         "react-dom": "^19.0.0",
         "react-grid-gallery": "^1.0.1",
+        "react-photo-album": "^3.0.2",
         "react-player": "^2.16.0",
         "tailwind-merge": "^2.6.0",
-        "tailwindcss-animate": "^1.0.7"
+        "tailwindcss-animate": "^1.0.7",
+        "yet-another-react-lightbox": "^3.21.7"
     },
     "devDependencies": {
         "@eslint/eslintrc": "^3",
