@@ -1,25 +1,46 @@
-import Link from 'next/link';
-import { TextAnimate } from '@/components/ui/text-animate';
+'use client';
 
-export default function RootPage() {
+import Card from '@/components/ui/card';
+import Image from 'next/image';
+import Link from 'next/link';
+import projectsData from '@/data/projects.json';
+import { BlurFade } from '@/components/ui/blur-fade';
+
+export default function Projects() {
     return (
         <>
-            <div className="h-[calc(100dvh)] w-full flex items-center justify-center bg-primary-background ">
-                <div className="flex flex-col items-center justify-center h-full gap-10">
-                    <TextAnimate
-                        animation="blurInUp"
-                        by="character"
-                        once={false}
-                        className="text-[#FFF] font-degular text-2xl lg:text-7xl font-black"
+            <div className="flex flex-wrap sm:-mx-4">
+                {projectsData.map((project, index) => (
+                    <div
+                        key={project.id}
+                        className="w-full lg:w-1/2 xl:w-1/3 sm:px-4 mb-8"
                     >
-                        Bienvenue sur mon Portfolio
-                    </TextAnimate>
-                    <Link href="/projects">
-                        <button className="animate__animated !text-[#FFF] animate__fadeIn animate__delay-3s relative flex cursor-pointer items-center justify-center font-degular font-semibold text-xl rounded-[15px] px-10 py-4 text-center text-primary-foreground">
-                            Découvrir qui je suis
-                        </button>
-                    </Link>
-                </div>
+                        <BlurFade delay={0.20 + index * 0.2} inView>
+                            <Card
+                                width={0}
+                                height={0}
+                                borderRadius={20}
+                                css={'hover:bg-custom-gradient-card transform hover:scale-[1.02] transition-transform'}
+                            >
+                                <Link
+                                    href={`/${project.id}`}
+                                    className="cursor-pointer"
+                                >
+                                    <div className="flex justify-center items-center p-4">
+                                        <Image
+                                            src={project.image}
+                                            alt="Image"
+                                            width={100}
+                                            height={100}
+                                            className="w-full h-auto rounded-xl"
+                                            layout="responsive"
+                                        />
+                                    </div>
+                                </Link>
+                            </Card>
+                        </BlurFade>
+                    </div>
+                ))}
             </div>
         </>
     );

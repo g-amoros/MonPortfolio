@@ -46,7 +46,7 @@ async function VideoComponent({ fileName }: { fileName: string }) {
 }
 
 // Détails de chacun des projets
-export default function ProjectDetail({
+export default async function ProjectDetail({
     params,
 }: {
     params: { project: string };

@@ -7,7 +7,7 @@ export default function BackButton() {
     const router = useRouter();
     return (
         <>
-            <button className='!absolute !left-8 ' style={{ all: 'unset' }} onClick={() => router.push('/projects')}>
+            <button className='!absolute !left-8 ' style={{ all: 'unset' }} onClick={() => router.push('/')}>
                     <div className="backbutton flex animate__fadeIn animate__animated transition-transform justify-center items-center p-2 cursor-pointer border-[2px] border-[#ffffff4e] rounded-xl">
                         <Image
                             src={Arrow}
