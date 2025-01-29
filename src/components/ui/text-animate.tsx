@@ -303,15 +303,15 @@ const defaultItemAnimationVariants: Record<
 export function TextAnimate({
     children,
     delay = 0,
-    duration = 0.3,
+    duration,
     variants,
     className,
     segmentClassName,
     as: Component = 'p',
     startOnView = true,
     once = false,
-    by = 'word',
-    animation = 'fadeIn',
+    by = 'character',
+    animation = 'slideLeft',
     ...props
 }: TextAnimateProps) {
     const MotionComponent = motion.create(Component);

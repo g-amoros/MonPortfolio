@@ -26,6 +26,10 @@ import Tiktok from '@/public/tiktok.svg';
 import NextJS from '@/public/nextjs.svg';
 import Vite from '@/public/vite.svg';
 import Expo from '@/public/expo.svg';
+import Java from '@/public/java.svg';
+import { TextAnimate } from '@/components/ui/text-animate';
+import { AnimatedSubscribeButton } from '@/components/ui/animated-subscribe-button';
+import Tick from '@/public/tick.png';
 
 const socials = [
     {
@@ -90,6 +94,12 @@ const skills = {
         {
             name: 'Php',
             icon: Php,
+            width: 45,
+            height: 45,
+        },
+        {
+            name: 'Java',
+            icon: Java,
             width: 45,
             height: 45,
         },
@@ -191,7 +201,7 @@ const profileItems = [
 export default function Profile() {
     return (
         <>
-            <div className="h-full animate__backInLeft animate__animated w-full md:w-1/2 lg:w-full">
+            <div className="h-full animate__fadeIn animate__duration-1s animate__animated w-full md:w-1/2 lg:w-full">
                 <Card width={100} height={100}>
                     <div className="flex items-start justify-center relative w-full">
                         <Image
@@ -211,7 +221,9 @@ export default function Profile() {
                                         '6.41px 6.41px 9.1px rgba(0, 0, 0, 0.11)',
                                 }}
                             >
-                                Hello,
+                                <TextAnimate delay={3} animation="blurInDown">
+                                    Hello,
+                                </TextAnimate>
                             </h1>
                             <Image
                                 src={WavingHand}
@@ -222,7 +234,9 @@ export default function Profile() {
                             />
                         </div>
                         <h2 className="text-4xl text-[#efefef] font-degular font-black">
-                            I&apos;m Gaël Amoros
+                            <TextAnimate animation="blurInDown">
+                                I&apos;m Gaël Amoros
+                            </TextAnimate>
                         </h2>
                         <div className="w-full h-[0.0625rem] bg-[#FFF] my-8" />
 
@@ -234,14 +248,14 @@ export default function Profile() {
                             </span>
                         </p>
                     </div>
-                    <div className="flex flex-col justify-center flex-shrink-0 px-12 gap-4 my-10">
+                    <div className="flex flex-col justify-center flex-shrink-0 px-12 gap-4 mb-10 my-8">
                         {profileItems.map((item, index) => (
                             <div key={index}>{profileItem(item)}</div>
                         ))}
                     </div>
                 </Card>
             </div>
-            <div className="h-fit animate__backInLeft animate__animated w-full md:w-1/2 lg:w-full">
+            <div className="h-fit animate__fadeIn animate__duration-1s w-full md:w-1/2 lg:w-full">
                 <Card width={100} height={100}>
                     <div className="h-full flex flex-col justify-between gap-8 px-12 py-12">
                         <h1
@@ -292,15 +306,36 @@ export default function Profile() {
                             </div>
                         </div>
                         <div className="flex items-center flex-col gap-4">
-                            <button className="button-animate flex w-full justify-center items-center px-8 py-4 font-degular font-semibold text-white text-xl gap-4">
-                                <Image
-                                    src={Enveloppe}
-                                    alt="Enveloppe"
-                                    width={20}
-                                    height={20}
-                                />
-                                <span>Contactez-moi</span>
-                            </button>
+                            <AnimatedSubscribeButton className="w-36">
+                                <span className="group inline-flex items-center text-xl font-degular font-semibold text-[#FFF]">
+                                    <Image
+                                        src={Enveloppe}
+                                        alt="Enveloppe"
+                                        width={20}
+                                        height={20}
+                                        className="mr-3"
+                                    />
+                                    <TextAnimate className="mr-3">
+                                        pro@gael-amoros.fr
+                                    </TextAnimate>
+                                </span>
+                                <span className="group inline-flex items-center text-xl font-degular font-semibold text-[#FFF]">
+                                    <Image
+                                        src={Tick}
+                                        alt="Tick"
+                                        width={20}
+                                        height={20}
+                                        className="mr-3 animate__fadeIn animate__animated animate__faster"
+                                    />
+                                    <TextAnimate
+                                        animation="slideLeft"
+                                        duration={0.1}
+                                        className="mr-3"
+                                    >
+                                        Mail copié
+                                    </TextAnimate>
+                                </span>
+                            </AnimatedSubscribeButton>
                         </div>
                         <div className="flex relative justify-between w-full gap-3">
                             {socials.map((social, index) => (

@@ -16,53 +16,46 @@ html {
 }
 
 .radial-mask {
-    background: radial-gradient(circle,
-            rgba(0, 0, 0, 0) 0%,
-            rgba(0, 0, 0, 1) 80%);
-    mask-image: radial-gradient(circle,
-            rgba(0, 0, 0, 0) 0%,
-            rgba(0, 0, 0, 1) 80%);
-    -webkit-mask-image: radial-gradient(circle,
-            rgba(0, 0, 0, 0) 0%,
-            rgba(0, 0, 0, 1) 80%);
+    background: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 1) 80%
+    );
+    mask-image: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 1) 80%
+    );
+    -webkit-mask-image: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 1) 80%
+    );
     width: 100%;
     height: 100%;
 }
 
 .test {
-    background: linear-gradient(337deg,
-            rgba(0, 0, 0, 0.08) 0%,
-            rgba(255, 255, 255, 0.15) 91.9%);
+    background: linear-gradient(
+        337deg,
+        rgba(0, 0, 0, 0.08) 0%,
+        rgba(255, 255, 255, 0.15) 91.9%
+    );
     stroke-width: 1px;
     stroke: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(8.100000381469727px);
 }
 
-@keyframes hoverGlow {
-    0% {
-        box-shadow:
-            0px 0px 209.455px 0px rgba(100, 23, 255, 0.4),
-            0px 0px 1.164px 4.655px rgba(255, 255, 255, 0.3),
-            0px -4.655px 2.327px 0px rgba(0, 0, 0, 0.3) inset,
-            0px 2.327px 1.164px 0px rgba(255, 255, 255, 0.4) inset;
-    }
-
-    100% {
-        box-shadow:
-            0px 0px 300px 0px rgba(93, 23, 255, 0.6),
-            0px 0px 1.164px 6px rgba(255, 255, 255, 0.4),
-            0px -6px 3px 0px rgba(0, 0, 0, 0.4) inset,
-            0px 3px 2px 0px rgba(255, 255, 255, 0.5) inset;
-    }
-}
-
-button {
+.button {
+    width: 100% !important;
     border-radius: 1.125rem;
     --animate-delay: 0.5s;
-    background: linear-gradient(169deg,
+    background: linear-gradient(
+            169deg,
             rgba(46, 51, 90, 0.5) 3.28%,
-            rgba(28, 27, 51, 0.5) 95.89%),
-        radial-gradient(50% 50% at 50% 50%, #907cf3 0%, #504bc7 100%);
+            rgba(28, 27, 51, 0.5) 95.89%
+        ),
+        radial-gradient(50% 50% at 50% 50%, #828ee9b2 0%, #3e40ac 100%);
     box-shadow:
         0px 0px 209.455px 0px rgba(153, 23, 255, 0),
         0px 0px 1.164px 4.655px rgba(255, 255, 255, 0.1),
@@ -70,18 +63,16 @@ button {
         0px 2.327px 1.164px 0px rgba(255, 255, 255, 0.25) inset;
 }
 
-.button-animate:hover {
-    animation: hoverGlow 0.5s forwards;
-}
-
 .animate__animated.animate__backInLeft {
     --animate-duration: 1.5s;
 }
 
 .backbutton:hover {
-    background-image: linear-gradient(337deg,
-            rgba(0, 0, 0, 0.1) 0%,
-            rgba(255, 255, 255, 0.15) 91.9%);
+    background-image: linear-gradient(
+        337deg,
+        rgba(0, 0, 0, 0.1) 0%,
+        rgba(255, 255, 255, 0.15) 91.9%
+    );
 }
 
 .link {
