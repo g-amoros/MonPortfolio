@@ -3,7 +3,7 @@
         "id": "1",
         "name": "Chauffleet",
         "subtitle": "Un site vitrine pour un SAAS de VTC",
-        "description": "Conception d'un site vitrine pour un SAAS de VTC, visant à présenter les services proposés et attirer de nouveaux clients.",
+        "description": "Conception et développement d’un site vitrine pour une solution SAAS de VTC. L'objectif principal était de mettre en valeur les services proposés, tels que la réservation simplifiée, la gestion des trajets, et les avantages pour les utilisateurs.",
         "date": "01/2025",
         "image": "/Projects/Project1/Projet1.png",
         "images": [
@@ -14,21 +14,11 @@
             "/Projet3.png",
             "/Projet3.png"
         ],
-        "video": "Projet1.mov",
-        "langages": [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "TypeScript"
-        ],
-        "frameworks": [
-            "Astro",
-            "ReactJS",
-            "Node.js"
-        ],
+        "video": "Projet1.mp4",
+        "langages": ["HTML", "CSS", "JavaScript", "TypeScript"],
+        "frameworks": ["Astro", "ReactJS", "Node.js"],
         "base_de_donnees": null,
-        "url": "https://www.app.chauffleet.com/",
-        "github": "https://www.bankai-psd.fr/"
+        "url": "https://www.chauffleet.com/"
     },
     {
         "id": "2",
@@ -45,16 +35,11 @@
             "/Projet3.png",
             "/Projet3.png"
         ],
-        "video": "Projet1.mov",
-        "langages": [
-            "HTML",
-            "CSS",
-            "JavaScript, Php, Bootstrap"
-        ],
+        "video": "Projet2.mov",
+        "langages": ["HTML", "CSS", "JavaScript, Php, Bootstrap"],
         "frameworks": null,
         "base_de_donnees": null,
-        "url": "https://www.bankai-psd.fr/",
-        "github": "https://www.bankai-psd.fr/"
+        "url": "https://www.bankai-psd.fr/"
     },
     {
         "id": "3",
@@ -71,21 +56,11 @@
             "@/public/Projet3-DypYubmy.png",
             "@/public/Projet3-DypYubmy.png"
         ],
-        "video": "Projet2.mov",
-        "langages": [
-            "HTML",
-            "CSS",
-            "JavaScript"
-        ],
-        "frameworks": [
-            "ReactJS",
-            "Node.js"
-        ],
-        "base_de_donnees": [
-            "Firebase"
-        ],
-        "url": null,
-        "github": ""
+        "video": "Projet3.mov",
+        "langages": ["HTML", "CSS", "JavaScript"],
+        "frameworks": ["ReactJS", "Node.js"],
+        "base_de_donnees": ["Firebase"],
+        "url": null
     },
     {
         "id": "4",
@@ -102,17 +77,11 @@
             "@/public/Projet3-DypYubmy.png",
             "@/public/Projet3-DypYubmy.png"
         ],
-        "video": "Projet3.mp4",
-        "langages": [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "PHP"
-        ],
+        "video": "Projet4.mp4",
+        "langages": ["HTML", "CSS", "JavaScript", "PHP"],
         "frameworks": null,
         "base_de_donnees": null,
-        "url": "https://bankai-psd.netlify.app/",
-        "github": ""
+        "url": null
     },
     {
         "id": "5",
@@ -129,19 +98,11 @@
             "@/public/Projet3-DypYubmy.png",
             "@/public/Projet3-DypYubmy.png"
         ],
-        "video": "Projet4.mov",
-        "langages": [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "PHP",
-            "Python",
-            "Bash"
-        ],
+        "video": "Projet5.mov",
+        "langages": ["HTML", "CSS", "JavaScript", "PHP", "Python", "Bash"],
         "frameworks": null,
         "base_de_donnees": null,
-        "url": null,
-        "github": "https://github.com/MisterGawel/Parc-Informatique"
+        "url": "https://github.com/MisterGawel/Parc-Informatique"
     },
     {
         "id": "6",
@@ -158,22 +119,11 @@
             "@/public/Projet3-DypYubmy.png",
             "@/public/Projet3-DypYubmy.png"
         ],
-        "video": "Projet5.mp4",
-        "langages": [
-            "HTML",
-            "CSS",
-            "JavaScript"
-        ],
-        "frameworks": [
-            "React",
-            "Bootstrap"
-        ],
-        "base_de_donnees": [
-            "MongoDB",
-            "MySQL"
-        ],
-        "url": "https://bankai-psd.netlify.app/",
-        "github": ""
+        "video": "Projet6.mp4",
+        "langages": ["HTML", "CSS", "JavaScript"],
+        "frameworks": ["React", "Bootstrap"],
+        "base_de_donnees": ["MongoDB", "MySQL"],
+        "url": "https://github.com/MisterGawel/Business-Website"
     },
     {
         "id": "7",
@@ -190,21 +140,10 @@
             "@/public/Projet3-DypYubmy.png",
             "@/public/Projet3-DypYubmy.png"
         ],
-        "video": "Projet5.mp4",
-        "langages": [
-            "HTML",
-            "CSS",
-            "JavaScript"
-        ],
-        "frameworks": [
-            "React",
-            "Bootstrap"
-        ],
-        "base_de_donnees": [
-            "MongoDB",
-            "MySQL"
-        ],
-        "url": "https://bankai-psd.netlify.app/",
-        "github": ""
+        "video": "Projet7.mov",
+        "langages": ["HTML", "CSS", "JavaScript"],
+        "frameworks": ["React", "Bootstrap"],
+        "base_de_donnees": ["MongoDB", "MySQL"],
+        "url": "https://bankai-psd.netlify.app/"
     }
 ]
