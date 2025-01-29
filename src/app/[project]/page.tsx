@@ -11,8 +11,8 @@ import { list } from '@vercel/blob';
 import BackButton from '@/components/ui/back-button';
 import "react-photo-album/rows.css";
 import LightGallery from '@/components/ui/lightgallery';
-import Skeleton from '@mui/material/Skeleton';
-
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 // Pré-génération des pages statiques, pour chaque projet du fichier projects.json
 export async function generateStaticParams() {
     // Pour chaque projet, on retourne un objet avec la clé project
@@ -126,8 +126,8 @@ export default async function ProjectDetail(props: {
             </div>
             <div className="xl:flex justify-between items-start gap-8 mt-8 grow">
                 <div className="xl:w-1/2 w-full flex flex-col gap-8">
-                    <div className="w-full rounded-xl">
-                        <Suspense fallback={<Skeleton variant="rectangular" className='w-full min-h-full' />}>
+                    <div className="w-full rounded-xl relative">
+                        <Suspense fallback={<Skeleton className='w-full h-full' />}>
                             <VideoComponent fileName={project.video} />
                         </Suspense>
                     </div>

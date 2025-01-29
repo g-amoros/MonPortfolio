@@ -7,6 +7,7 @@ import { AOSInit } from '@/components/aos';
 import 'animate.css';
 import Profile from './profile';
 import Footer from './footer';
+import Providers from './providers';
 
 const Roberto = localFont({
     src: [
@@ -79,9 +80,11 @@ export default function RootLayout({
                             <Profile />
                         </div>
                         <div className="h-auto w-full mx-auto flex flex-col min-h-full justify-between">
-                            <div className="2xl:w-[80%] mx-auto flex flex-col min-h-full">
-                                {children}
-                            </div>
+                            <Providers>
+                                <div className="2xl:w-[80%] mx-auto flex flex-col min-h-full">
+                                    {children}
+                                </div>
+                            </Providers>
                         </div>
                     </div>
                     <div className="flex gap-16 pb-8 items-stretch ">

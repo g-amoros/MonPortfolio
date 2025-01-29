@@ -1,16 +1,15 @@
 'use client';
 import Image from 'next/image';
 import Arrow from '@/public/arrow.svg';
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 export default function BackButton() {
-    const router = useRouter();
     return (
         <>
-            <button
+            <Link
                 className="!absolute !left-8 "
                 style={{ all: 'unset' }}
-                onClick={() => router.push('/')}
+                href={'/'}
             >
                 <div className="backbutton flex animate__fadeIn animate__animated transition-transform justify-center items-center p-2 cursor-pointer border-[2px] border-[#ffffff4e] rounded-xl">
                     <Image
@@ -21,7 +20,7 @@ export default function BackButton() {
                         className="w-7 h-7 rounded-xl"
                     />
                 </div>
-            </button>
+            </Link>
         </>
     );
 }
