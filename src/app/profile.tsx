@@ -166,6 +166,7 @@ const profileItem = ({ text, image, size }: profileItemProps) => {
                         src={image}
                         alt="Image"
                         width={size}
+                        style={{width: size, height: size}}
                         height={size}
                         className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
                     />
@@ -207,8 +208,6 @@ export default function Profile() {
                         <Image
                             src={Pp}
                             alt="Profile Picture"
-                            width={200}
-                            height={200}
                             className="absolute -top-16"
                         />
                     </div>

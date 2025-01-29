@@ -8,13 +8,10 @@ import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 
 export default function Gallery({ photos }: { photos: string[] }) {
-    const onInit = () => {
-        console.log('lightGallery has been initialized');
-    };
+
     return (
         <>
             <LightGallery
-                onInit={onInit}
                 speed={500}
                 licenseKey="0000-0000-000-0000"
                 download={false}

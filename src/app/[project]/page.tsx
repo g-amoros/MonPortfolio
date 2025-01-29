@@ -8,11 +8,11 @@ import Frameworks from '@/public/frameworks.svg';
 import GithubIcon from '@/public/githubIcon.svg';
 import { Suspense } from 'react';
 import { list } from '@vercel/blob';
-import BackButton from '@/components/ui/back-button';
+import { BackButton, BackButtonMobile } from '@/components/ui/back-button';
 import 'react-photo-album/rows.css';
 import LightGallery from '@/components/ui/lightgallery';
-import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
+import Skeleton from '@mui/material/Skeleton';
 import Globe from '@/public/globe.png';
 import { TextAnimate } from '@/components/ui/text-animate';
 
@@ -104,13 +104,44 @@ export default async function ProjectDetail(props: {
         (p) => p.id.toString() === params.project,
     );
 
-    //! Mettre en place une page d'erreur 404
     if (!project) {
-        return <div>Projet non trouvé</div>;
+        return (
+        <>
+            <Card
+                width={0}
+                height={0}
+                borderRadius={20}
+                css="mb-6 block md:hidden"
+            >
+                <BackButtonMobile />
+            </Card>
+            <Card borderRadius={20} width={100} height={0}>
+                <div className="relative flex w-full h-full items-center justify-center">
+                <BackButton />
+                    <div className=" px-6 py-4 text-center flex flex-col items-center justify-center">
+                        <h1 className="text-xl 2xl:text-3xl font-degular font-semibold text-[#EFEFEF] flex items-center gap-3">
+                            <span className="text-[#ef4444] text-2xl">⚠️</span> Erreur : Projet non trouvé
+                        </h1>
+                        <p className="text-[#efefefcc] text-sm 2xl:text-lg mt-2 font-light font-roberto">
+                            Le projet que vous cherchez <br className='hidden lg:block xl:hidden'/>n&apos;existe pas ou a été supprimé.
+                        </p>
+                    </div>
+                </div>
+            </Card>
+        </>
+        );
     }
 
     return (
         <>
+            <Card
+                width={0}
+                height={0}
+                borderRadius={20}
+                css="mb-6 block md:hidden"
+            >
+                <BackButtonMobile />
+            </Card>
             <Card width={100} height={0} borderRadius={20}>
                 <div className="grid justify-center items-center h-auto py-4 relative">
                     <BackButton />
@@ -129,10 +160,21 @@ export default async function ProjectDetail(props: {
                 </div>
             </Card>
             <div className="xl:flex justify-between items-start gap-8 mt-8 grow">
-                <div className="xl:w-1/2 w-full flex flex-col gap-8">
+                <div className="xl:w-[60%] w-full flex flex-col gap-8">
                     <div className="w-full rounded-xl relative">
                         <Suspense
-                            fallback={<Skeleton className="w-full h-full" />}
+                            fallback={
+                                <Skeleton
+                                    width={'100%'}
+                                    height={300}
+                                    variant="rounded"
+                                    className="!rounded-xl"
+                                    style={{
+                                        backgroundColor: 'rgba(0,0,0,0.30)',
+                                        aspectRatio: '16/9',
+                                    }}
+                                />
+                            }
                         >
                             <VideoComponent fileName={project.video} />
                         </Suspense>
