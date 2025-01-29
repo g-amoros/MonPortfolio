@@ -11,8 +11,11 @@ import { list } from '@vercel/blob';
 import BackButton from '@/components/ui/back-button';
 import 'react-photo-album/rows.css';
 import LightGallery from '@/components/ui/lightgallery';
-import Skeleton from 'react-loading-skeleton'
-import 'react-loading-skeleton/dist/skeleton.css'
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
+import Globe from '@/public/globe.png';
+import { TextAnimate } from '@/components/ui/text-animate';
+
 // Pré-génération des pages statiques, pour chaque projet du fichier projects.json
 export async function generateStaticParams() {
     // Pour chaque projet, on retourne un objet avec la clé project
@@ -74,8 +77,8 @@ const Tools = ({ langages, frameworks, base_de_donnees }: ToolsProps) => {
                                         category === 'Langages'
                                             ? Langages
                                             : category === 'Frameworks'
-                                                ? Frameworks
-                                                : Outils
+                                              ? Frameworks
+                                              : Outils
                                     }
                                     alt={category}
                                     width={35}
@@ -128,7 +131,9 @@ export default async function ProjectDetail(props: {
             <div className="xl:flex justify-between items-start gap-8 mt-8 grow">
                 <div className="xl:w-1/2 w-full flex flex-col gap-8">
                     <div className="w-full rounded-xl relative">
-                        <Suspense fallback={<Skeleton className='w-full h-full' />}>
+                        <Suspense
+                            fallback={<Skeleton className="w-full h-full" />}
+                        >
                             <VideoComponent fileName={project.video} />
                         </Suspense>
                     </div>
@@ -160,7 +165,8 @@ export default async function ProjectDetail(props: {
                                     style={{
                                         textShadow:
                                             '6.41px 6.41px 9.1px rgba(0, 0, 0, 0.11)',
-                                    }}>
+                                    }}
+                                >
                                     Résumé du projet
                                 </h1>
                             </div>
@@ -207,7 +213,7 @@ export default async function ProjectDetail(props: {
                                                 }
                                                 alt="Github"
                                                 width={25}
-                                                className='animate__fadeIn animate__animated animate__faster'
+                                                className="animate__fadeIn animate__animated animate__faster"
                                                 height={25}
                                             />
                                             <span>
