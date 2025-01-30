@@ -6,7 +6,12 @@
         "description": "Conception et développement d’un site vitrine pour une solution SAAS de VTC. L'objectif principal était de mettre en valeur les services proposés, tels que la réservation simplifiée, la gestion des trajets, et les avantages pour les utilisateurs.",
         "image": "/Projects/Project1/Projet1.png",
         "images": [
-            "/Image1.svg"
+            "/Image1.svg",
+            "/Image2.png",
+            "/Image3.png",
+            "/Image4.png",
+            "/Image5.png",
+            "/Image6.png"
         ],
         "video": "Projet1.mp4",
         "langages": [
@@ -69,9 +74,9 @@
     },
     {
         "id": "4",
-        "name": "Site vitrine pour une boulangerie",
-        "subtitle": "Un site vitrine pour un graphiste freelance",
-        "description": "Création d'un site vitrine pour une boulangerie située à Avignon. Le site est responsive et a été réalisé en HTML, CSS, Javascript et PHP, avec l'utilisation du framework Bootstrap pour la mise en forme.",
+        "name": "Portfolio",
+        "subtitle": "Ancien portfolio",
+        "description": "Conception et développement de mon ancien portfolio, présentant mes compétences, projets et expériences professionnelles. Le site est responsive et optimisé pour une navigation fluide et intuitive.",
         "image": "/Projects/Project4/Projet4.png",
         "images": [
             "/Image1.svg",
@@ -84,17 +89,20 @@
         "langages": [
             "HTML",
             "CSS",
-            "JavaScript",
-            "PHP"
+            "JavaScript"
         ],
-        "frameworks": null,
+        "frameworks": [
+            "React",
+            "Tailwind",
+            "Node.js"
+        ],
         "base_de_donnees": null,
-        "url": null
+        "url": "https://portfolio.gael-amoros.fr"
     },
     {
         "id": "5",
         "name": "Parc Informatique",
-        "subtitle": "Un site vitrine pour un graphiste freelance",
+        "subtitle": "Plate-forme de monitoring pour un parc informatique",
         "description": "Création d'une plate-forme de monitoring pour un parc informatique sous Linux permettant de gérer et visualiser les données de plusieurs serveurs en temps réel. Un site permet de visualiser les données de manière graphique.",
         "image": "/Projects/Project5/Projet5.png",
         "images": [],
@@ -113,48 +121,35 @@
     },
     {
         "id": "6",
-        "name": "Portfolio de BANKAI-PSD",
-        "subtitle": "Un site vitrine pour un graphiste freelance",
-        "description": "Conception d'un portfolio responsive pour un graphiste freelance, visant à présenter ses créations et attirer de nouveaux clients. Le site met l'accent sur l'accessibilité et la performance.",
+        "name": "Site vitrine d'une boulangerie",
+        "subtitle": "Un site vitrine pour une boulangerie artisanale",
+        "description": "Conception et développement d'un site vitrine pour une boulangerie artisanale, mettant en avant les produits et services proposés. Le site est responsive et optimisé pour une navigation fluide et intuitive.",
         "image": "/Projects/Project6/Projet6.png",
         "images": [],
         "video": "Projet6.mp4",
         "langages": [
             "HTML",
             "CSS",
-            "JavaScript"
+            "JavaScript",
+            "PHP"
         ],
-        "frameworks": [
-            "React",
-            "Bootstrap"
-        ],
-        "base_de_donnees": [
-            "MongoDB",
-            "MySQL"
-        ],
-        "url": "https://github.com/MisterGawel/Business-Website"
+        "frameworks": null,
+        "base_de_donnees": null,
+        "url": null
     },
     {
         "id": "7",
-        "name": "Portfolio de BANKAI-PSD",
-        "subtitle": "Un site vitrine pour un graphiste freelance",
-        "description": "Conception d'un portfolio responsive pour un graphiste freelance, visant à présenter ses créations et attirer de nouveaux clients. Le site met l'accent sur l'accessibilité et la performance.",
+        "name": "Puissance 4",
+        "subtitle": "Jeu de Puissance 4 en C++",
+        "description": "Création d'un jeu de Puissance 4 en C++. Le jeu se joue contre une IA qui utilise un algorithme Minimax pour déterminer le meilleur coup à jouer.",
         "image": "/Projects/Project7/Projet7.png",
         "images": [],
         "video": "Projet7.mov",
         "langages": [
-            "HTML",
-            "CSS",
-            "JavaScript"
+            "C++"
         ],
-        "frameworks": [
-            "React",
-            "Bootstrap"
-        ],
-        "base_de_donnees": [
-            "MongoDB",
-            "MySQL"
-        ],
+        "frameworks": null,
+        "base_de_donnees": null,
         "url": "https://bankai-psd.netlify.app/"
     }
 ]

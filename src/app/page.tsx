@@ -33,7 +33,7 @@ export default function Projects() {
                                 height={0}
                                 borderRadius={20}
                                 css={
-                                    'hover:bg-custom-gradient-card transform hover:scale-[1.02] transition-transform !border-none shadow-xl'
+                                    'hover:bg-custom-gradient-card transform hover:scale-[1.02] hover:opacity-80 transition-transform !border-none shadow-xl'
                                 }
                             >
                                 <Link
