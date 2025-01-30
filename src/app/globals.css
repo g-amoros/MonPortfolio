@@ -47,8 +47,8 @@ html {
             rgba(28, 27, 51, 0.5) 95.89%),
         radial-gradient(50% 50% at 50% 50%, #828ee9b2 0%, #3e40ac 100%);
     box-shadow:
-        0px 0px 209.455px 0px rgba(153, 23, 255, 0),
-        0px 0px 1.164px 4.655px rgba(255, 255, 255, 0.1),
+        0px 0px 209.455px 200px rgba(153, 23, 255, 0),
+        0px 0px 15.164px 1.655px rgba(255, 255, 255, 0.058),
         0px -4.655px 2.327px 0px rgba(0, 0, 0, 0.25) inset,
         0px 2.327px 1.164px 0px rgba(255, 255, 255, 0.25) inset;
 }

@@ -29,7 +29,6 @@ import Expo from '@/public/expo.svg';
 import Java from '@/public/java.svg';
 import { TextAnimate } from '@/components/ui/text-animate';
 import { AnimatedSubscribeButton } from '@/components/ui/animated-subscribe-button';
-import Tick from '@/public/tick.png';
 
 const socials = [
     {
@@ -172,7 +171,7 @@ const profileItem = ({ text, image, size }: profileItemProps) => {
                     />
                 </div>
                 <div className="ml-4">
-                    <span className="font-roberto font-black text-white text-sm">
+                    <span className="font-roberto font-semibold text-white text-sm">
                         {text}
                     </span>
                 </div>
@@ -230,8 +229,8 @@ export default function Profile() {
                             <Image
                                 src={WavingHand}
                                 alt="Waving Hand"
-                                width={50}
-                                height={50}
+                                width={40}
+                                height={40}
                                 className="ml-2 pb-2"
                             />
                         </div>
@@ -240,14 +239,11 @@ export default function Profile() {
                                 I&apos;m Gaël Amoros
                             </TextAnimate>
                         </h2>
-                        <div className="w-full h-[0.0625rem] bg-[#FFF] my-8" />
-
                         <p className="text-[#efefef] text-sm font-roberto font-normal mt-3">
-                            Actuellement étudiant en informatique & développeur
-                            Web basé à Avignon, <br></br>
-                            <span className="font-bold font-roberto">
-                                voici ce que je peux vous proposer :
-                            </span>
+                            Basé à Avignon, je conçois et développe <br/>des solutions web sur mesure pour répondre <br/>à vos besoins numériques.
+                        </p>
+                        <p className="text-[#efefef] text-sm font-roberto mt-8 font-bold">
+                            Découvrez ce que je peux vous offrir :
                         </p>
                     </div>
                     <div className="flex flex-col justify-center flex-shrink-0 px-12 gap-4 mb-10 my-8">
@@ -322,19 +318,12 @@ export default function Profile() {
                                     </TextAnimate>
                                 </span>
                                 <span className="group inline-flex items-center text-xl font-degular font-semibold text-[#FFF]">
-                                    <Image
-                                        src={Tick}
-                                        alt="Tick"
-                                        width={20}
-                                        height={20}
-                                        className="mr-3 animate__fadeIn animate__animated animate__faster"
-                                    />
                                     <TextAnimate
                                         animation="slideLeft"
                                         duration={0.1}
                                         className="mr-3"
                                     >
-                                        Mail copié
+                                        Mail copié !
                                     </TextAnimate>
                                 </span>
                             </AnimatedSubscribeButton>
@@ -347,7 +336,7 @@ export default function Profile() {
                                     target="_blank"
                                     data-aos="zoom-in"
                                     rel="noopener noreferrer"
-                                    className=" h-fit hover:scale-90 transform transition-all duration-300"
+                                    className=" h-fit hover:!scale-90 transform transition-all duration-300"
                                 >
                                     <Image
                                         src={social.icon}

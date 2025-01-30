@@ -68,7 +68,7 @@ const Tools = ({ langages, frameworks, base_de_donnees }: ToolsProps) => {
                 ([category, items]) =>
                     items ? (
                         <div key={category} className="mb-4">
-                            <h5 className="text-[#EFEFEF80] font-degular text-sm font-light">
+                            <h5 className="text-[#EFEFEF80] font-degular text-base font-light">
                                 {category}
                             </h5>
                             <div className="flex items-center gap-4 mt-1">
@@ -91,7 +91,7 @@ const Tools = ({ langages, frameworks, base_de_donnees }: ToolsProps) => {
                         </div>
                     ) : (
                         <div key={category} className="mb-4">
-                            <h5 className="text-[#EFEFEF80] font-degular text-sm font-light">
+                            <h5 className="text-[#EFEFEF80] font-degular text-base font-light">
                                 {category}
                             </h5>
                             <div className="flex items-center gap-4 mt-1">
@@ -202,30 +202,19 @@ export default async function ProjectDetail(props: {
                         </Suspense>
                     </div>
                     <LightGallery photos={project.images} projectId={project.id} />
-                    <div className="w-full flex justify-center items-center mb-6">
-                        <h1
-                            className="text-base text-[#efefefcc] opacity-70 font-degular font-semibold"
-                            style={{
-                                textShadow:
-                                    '6.41px 6.41px 9.1px rgba(0, 0, 0, 0.11)',
-                            }}
-                        >
-                            Projet réalisé le {project.date}
-                        </h1>
-                    </div>
                 </div>
-                <div className="2xl:w-[40%] w-full flex h-auto">
+                <div className="2xl:w-[40%] w-full flex h-auto mt-8 xl:mt-0">
                     <Card width={100} height={0} borderRadius={20}>
                         <div className="p-12 grid grid-rows-[1fr,auto] h-full">
                             <div className="flex gap-4 items-center">
                                 <Image
                                     src={Frame}
                                     alt="Frame"
-                                    width={35}
-                                    height={35}
+                                    width={41}
+                                    height={41}
                                 />
                                 <h1
-                                    className="text-2xl text-[#efefefcc] font-degular font-bold"
+                                    className="text-2xl text-[#fff] font-degular font-bold"
                                     style={{
                                         textShadow:
                                             '6.41px 6.41px 9.1px rgba(0, 0, 0, 0.11)',

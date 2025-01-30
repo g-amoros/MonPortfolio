@@ -4,7 +4,6 @@
         "name": "Chauffleet",
         "subtitle": "Un site vitrine pour un SAAS de VTC",
         "description": "Conception et développement d’un site vitrine pour une solution SAAS de VTC. L'objectif principal était de mettre en valeur les services proposés, tels que la réservation simplifiée, la gestion des trajets, et les avantages pour les utilisateurs.",
-        "date": "01/2025",
         "image": "/Projects/Project1/Projet1.png",
         "images": [
             "/Image1.svg"
@@ -29,7 +28,6 @@
         "name": "Portfolio de BANKAI-PSD",
         "subtitle": "Un site vitrine pour un graphiste freelance",
         "description": "Conception d'un portfolio responsive pour un graphiste freelance, visant à présenter ses créations et attirer de nouveaux clients. Le site met l'accent sur l'accessibilité et la performance.",
-        "date": "10/20/2023",
         "image": "/Projects/Project2/Projet2.png",
         "images": [
             "/Image1.svg",
@@ -52,7 +50,6 @@
         "name": "Site e-commerce",
         "subtitle": "Un site e-commerce pour une boutique de composants informatiques",
         "description": "Site e-commerce spécialisé dans les composants informatiques, développé avec ReactJS, Node.js et Firebase. Interface responsive, gestion du panier, recherche de produits et authentification sécurisée intégrées pour une expérience utilisateur optimisée.",
-        "date": "10/20/2023",
         "image": "/Projects/Project3/Projet3.png",
         "images": [],
         "video": "Projet3.mov",
@@ -75,7 +72,6 @@
         "name": "Site vitrine pour une boulangerie",
         "subtitle": "Un site vitrine pour un graphiste freelance",
         "description": "Création d'un site vitrine pour une boulangerie située à Avignon. Le site est responsive et a été réalisé en HTML, CSS, Javascript et PHP, avec l'utilisation du framework Bootstrap pour la mise en forme.",
-        "date": "10/20/2023",
         "image": "/Projects/Project4/Projet4.png",
         "images": [
             "/Image1.svg",
@@ -100,7 +96,6 @@
         "name": "Parc Informatique",
         "subtitle": "Un site vitrine pour un graphiste freelance",
         "description": "Création d'une plate-forme de monitoring pour un parc informatique sous Linux permettant de gérer et visualiser les données de plusieurs serveurs en temps réel. Un site permet de visualiser les données de manière graphique.",
-        "date": "10/20/2023",
         "image": "/Projects/Project5/Projet5.png",
         "images": [],
         "video": "Projet5.mov",
@@ -121,7 +116,6 @@
         "name": "Portfolio de BANKAI-PSD",
         "subtitle": "Un site vitrine pour un graphiste freelance",
         "description": "Conception d'un portfolio responsive pour un graphiste freelance, visant à présenter ses créations et attirer de nouveaux clients. Le site met l'accent sur l'accessibilité et la performance.",
-        "date": "10/20/2023",
         "image": "/Projects/Project6/Projet6.png",
         "images": [],
         "video": "Projet6.mp4",
@@ -145,7 +139,6 @@
         "name": "Portfolio de BANKAI-PSD",
         "subtitle": "Un site vitrine pour un graphiste freelance",
         "description": "Conception d'un portfolio responsive pour un graphiste freelance, visant à présenter ses créations et attirer de nouveaux clients. Le site met l'accent sur l'accessibilité et la performance.",
-        "date": "10/20/2023",
         "image": "/Projects/Project7/Projet7.png",
         "images": [],
         "video": "Projet7.mov",

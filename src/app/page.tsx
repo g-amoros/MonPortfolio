@@ -33,14 +33,14 @@ export default function Projects() {
                                 height={0}
                                 borderRadius={20}
                                 css={
-                                    'hover:bg-custom-gradient-card transform hover:scale-[1.02] transition-transform'
+                                    'hover:bg-custom-gradient-card transform hover:scale-[1.02] transition-transform !border-none shadow-xl'
                                 }
                             >
                                 <Link
                                     href={`/${project.id}`}
                                     className="cursor-pointer"
                                 >
-                                    <div className="flex justify-center items-center p-4">
+                                    <div className="flex justify-center items-center">
                                         <Image
                                             src={project.image}
                                             alt="Image"

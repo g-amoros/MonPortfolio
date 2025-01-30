@@ -11,13 +11,13 @@ function BackButton() {
                 style={{ all: 'unset' }}
                 href={'/'}
             >
-                <div className="backbutton flex animate__fadeIn animate__animated transition-transform justify-center items-center p-2 cursor-pointer border-[2px] border-[#ffffff4e] rounded-xl">
+                <div className="backbutton flex animate__fadeIn animate__animated transition-transform justify-center items-center p-2 cursor-pointer rounded-xl">
                     <Image
                         src={Arrow}
                         alt="Image"
                         width={100}
                         height={100}
-                        className="w-7 h-7 rounded-xl"
+                        className="w-12 h-12 rounded-xl"
                     />
                 </div>
             </Link>
@@ -35,7 +35,7 @@ function BackButtonMobile() {
                         alt="Image"
                         width={100}
                         height={100}
-                        className="w-7 h-7 rounded-xl"
+                        className="w-12 h-12 rounded-xl"
                     />
                     <div className="p-4">
                         <h2 className="text-xl text-center font-degular font-bold text-white">
