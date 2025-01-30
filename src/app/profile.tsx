@@ -261,7 +261,7 @@ export default function Profile() {
                 <Card width={100} height={100}>
                     <div className="h-full flex flex-col justify-between gap-8 px-12 py-12">
                         <h1
-                            className="text-2xl text-[#efefefcc] font-degular font-bold"
+                            className="text-2xl text-[#fff] font-degular font-bold"
                             style={{
                                 textShadow:
                                     '6.41px 6.41px 9.1px rgba(0, 0, 0, 0.11)',
@@ -271,7 +271,7 @@ export default function Profile() {
                         </h1>
                         <div>
                             <div>
-                                <h5 className="text-[#EFEFEF80] font-degular text-lg font-light">
+                                <h5 className="text-[#efefefcc] font-degular text-lg font-light">
                                     Langages
                                 </h5>
                                 <div className="flex flex-wrap items-center gap-2 mt-2">
@@ -289,7 +289,7 @@ export default function Profile() {
                                 </div>
                             </div>
                             <div className="mt-4 mb-4">
-                                <h5 className="text-[#EFEFEF80] font-degular text-lg font-light">
+                                <h5 className="text-[#efefefcc] font-degular text-lg font-light">
                                     Frameworks
                                 </h5>
                                 <div className="flex flex-wrap items-center gap-2 mt-2">
