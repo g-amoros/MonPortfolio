@@ -1,9 +1,8 @@
 import React from 'react';
 import Card from '../components/ui/card';
 import Image from 'next/image';
-import Pp from '../../public/pp.svg';
 import type { StaticImageData } from 'next/image';
-import WavingHand from '@/public/WavingHand.svg';
+import WavingHand from '@/public/wavinghand.png';
 import Polygon from '@/public/polygon.svg';
 import Laptop from '@/public/Laptop.svg';
 import Cabinet from '@/public/cabinet.svg';
@@ -22,6 +21,7 @@ import Github from '@/public/github.svg';
 import Twitter from '@/public/x.svg';
 import Instagram from '@/public/instagram.svg';
 import Youtube from '@/public/youtube.svg';
+import Pp from './pp.png';
 import Tiktok from '@/public/tiktok.svg';
 import NextJS from '@/public/nextjs.svg';
 import Vite from '@/public/vite.svg';
@@ -166,7 +166,7 @@ const profileItem = ({ text, image, size }: profileItemProps) => {
                         src={image}
                         alt="Image"
                         width={size}
-                        style={{width: size, height: size}}
+                        style={{ width: size, height: size }}
                         height={size}
                         className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
                     />
@@ -183,12 +183,12 @@ const profileItem = ({ text, image, size }: profileItemProps) => {
 
 const profileItems = [
     {
-        text: 'Creation de site web dynamiques et performants',
+        text: 'Creation de site web dynamiques et performants.',
         image: Laptop,
         size: 20,
     },
     {
-        text: 'Des fondations solides avec un backend fiable et évolutif',
+        text: 'Des fondations solides avec un backend fiable et évolutif.',
         image: Cabinet,
         size: 20,
     },
@@ -206,9 +206,12 @@ export default function Profile() {
                 <Card width={100} height={100}>
                     <div className="flex items-start justify-center relative w-full">
                         <Image
-                            src={Pp}
-                            alt="Profile Picture"
-                            className="absolute -top-16"
+                            src={Pp.src}
+                            alt="profile picture"
+                            width={Pp.width}
+                            height={Pp.height}
+                            quality={100}
+                            className='absolute -top-16 w-48'
                         />
                     </div>
                     <div className="flex flex-col justify-center flex-shrink-0 px-12 mt-[10.5rem]">

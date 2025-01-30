@@ -7,16 +7,20 @@
         "date": "01/2025",
         "image": "/Projects/Project1/Projet1.png",
         "images": [
-            "/Projet3.png",
-            "/Projet3.png",
-            "/Projet3.png",
-            "/Projet3.png",
-            "/Projet3.png",
-            "/Projet3.png"
+            "/Image1.svg"
         ],
         "video": "Projet1.mp4",
-        "langages": ["HTML", "CSS", "JavaScript", "TypeScript"],
-        "frameworks": ["Astro", "ReactJS", "Node.js"],
+        "langages": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "TypeScript"
+        ],
+        "frameworks": [
+            "Astro",
+            "ReactJS",
+            "Node.js"
+        ],
         "base_de_donnees": null,
         "url": "https://www.chauffleet.com/"
     },
@@ -28,15 +32,17 @@
         "date": "10/20/2023",
         "image": "/Projects/Project2/Projet2.png",
         "images": [
-            "/Projet3.png",
-            "/Projet3.png",
-            "/Projet3.png",
-            "/Projet3.png",
-            "/Projet3.png",
-            "/Projet3.png"
+            "/Image1.svg",
+            "/Image2.svg",
+            "/Image3.svg",
+            "/Image4.svg"
         ],
         "video": "Projet2.mov",
-        "langages": ["HTML", "CSS", "JavaScript, Php, Bootstrap"],
+        "langages": [
+            "HTML",
+            "CSS",
+            "JavaScript, Php, Bootstrap"
+        ],
         "frameworks": null,
         "base_de_donnees": null,
         "url": "https://www.bankai-psd.fr/"
@@ -48,18 +54,20 @@
         "description": "Site e-commerce spécialisé dans les composants informatiques, développé avec ReactJS, Node.js et Firebase. Interface responsive, gestion du panier, recherche de produits et authentification sécurisée intégrées pour une expérience utilisateur optimisée.",
         "date": "10/20/2023",
         "image": "/Projects/Project3/Projet3.png",
-        "images": [
-            "@/public/Projet3-DypYubmy.png",
-            "@/public/Projet3-DypYubmy.png",
-            "@/public/Projet3-DypYubmy.png",
-            "@/public/Projet3-DypYubmy.png",
-            "@/public/Projet3-DypYubmy.png",
-            "@/public/Projet3-DypYubmy.png"
-        ],
+        "images": [],
         "video": "Projet3.mov",
-        "langages": ["HTML", "CSS", "JavaScript"],
-        "frameworks": ["ReactJS", "Node.js"],
-        "base_de_donnees": ["Firebase"],
+        "langages": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "frameworks": [
+            "ReactJS",
+            "Node.js"
+        ],
+        "base_de_donnees": [
+            "Firebase"
+        ],
         "url": null
     },
     {
@@ -70,15 +78,19 @@
         "date": "10/20/2023",
         "image": "/Projects/Project4/Projet4.png",
         "images": [
-            "@/public/Projet3-DypYubmy.png",
-            "@/public/Projet3-DypYubmy.png",
-            "@/public/Projet3-DypYubmy.png",
-            "@/public/Projet3-DypYubmy.png",
-            "@/public/Projet3-DypYubmy.png",
-            "@/public/Projet3-DypYubmy.png"
+            "/Image1.svg",
+            "/Image2.svg",
+            "/Image3.svg",
+            "/Image4.svg",
+            "/Image5.svg"
         ],
         "video": "Projet4.mp4",
-        "langages": ["HTML", "CSS", "JavaScript", "PHP"],
+        "langages": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "PHP"
+        ],
         "frameworks": null,
         "base_de_donnees": null,
         "url": null
@@ -90,16 +102,16 @@
         "description": "Création d'une plate-forme de monitoring pour un parc informatique sous Linux permettant de gérer et visualiser les données de plusieurs serveurs en temps réel. Un site permet de visualiser les données de manière graphique.",
         "date": "10/20/2023",
         "image": "/Projects/Project5/Projet5.png",
-        "images": [
-            "@/public/Projet3-DypYubmy.png",
-            "@/public/Projet3-DypYubmy.png",
-            "@/public/Projet3-DypYubmy.png",
-            "@/public/Projet3-DypYubmy.png",
-            "@/public/Projet3-DypYubmy.png",
-            "@/public/Projet3-DypYubmy.png"
-        ],
+        "images": [],
         "video": "Projet5.mov",
-        "langages": ["HTML", "CSS", "JavaScript", "PHP", "Python", "Bash"],
+        "langages": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "PHP",
+            "Python",
+            "Bash"
+        ],
         "frameworks": null,
         "base_de_donnees": null,
         "url": "https://github.com/MisterGawel/Parc-Informatique"
@@ -111,18 +123,21 @@
         "description": "Conception d'un portfolio responsive pour un graphiste freelance, visant à présenter ses créations et attirer de nouveaux clients. Le site met l'accent sur l'accessibilité et la performance.",
         "date": "10/20/2023",
         "image": "/Projects/Project6/Projet6.png",
-        "images": [
-            "@/public/Projet3-DypYubmy.png",
-            "@/public/Projet3-DypYubmy.png",
-            "@/public/Projet3-DypYubmy.png",
-            "@/public/Projet3-DypYubmy.png",
-            "@/public/Projet3-DypYubmy.png",
-            "@/public/Projet3-DypYubmy.png"
-        ],
+        "images": [],
         "video": "Projet6.mp4",
-        "langages": ["HTML", "CSS", "JavaScript"],
-        "frameworks": ["React", "Bootstrap"],
-        "base_de_donnees": ["MongoDB", "MySQL"],
+        "langages": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "frameworks": [
+            "React",
+            "Bootstrap"
+        ],
+        "base_de_donnees": [
+            "MongoDB",
+            "MySQL"
+        ],
         "url": "https://github.com/MisterGawel/Business-Website"
     },
     {
@@ -132,18 +147,21 @@
         "description": "Conception d'un portfolio responsive pour un graphiste freelance, visant à présenter ses créations et attirer de nouveaux clients. Le site met l'accent sur l'accessibilité et la performance.",
         "date": "10/20/2023",
         "image": "/Projects/Project7/Projet7.png",
-        "images": [
-            "@/public/Projet3-DypYubmy.png",
-            "@/public/Projet3-DypYubmy.png",
-            "@/public/Projet3-DypYubmy.png",
-            "@/public/Projet3-DypYubmy.png",
-            "@/public/Projet3-DypYubmy.png",
-            "@/public/Projet3-DypYubmy.png"
-        ],
+        "images": [],
         "video": "Projet7.mov",
-        "langages": ["HTML", "CSS", "JavaScript"],
-        "frameworks": ["React", "Bootstrap"],
-        "base_de_donnees": ["MongoDB", "MySQL"],
+        "langages": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "frameworks": [
+            "React",
+            "Bootstrap"
+        ],
+        "base_de_donnees": [
+            "MongoDB",
+            "MySQL"
+        ],
         "url": "https://bankai-psd.netlify.app/"
     }
 ]

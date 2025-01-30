@@ -59,14 +59,14 @@ const Tools = ({ langages, frameworks, base_de_donnees }: ToolsProps) => {
     const toolCategories = {
         Langages: langages,
         Frameworks: frameworks,
-        'Bases de données': base_de_donnees,
+        'Base de données': base_de_donnees,
     };
 
     return (
         <div>
             {Object.entries(toolCategories).map(
                 ([category, items]) =>
-                    items && (
+                    items ? (
                         <div key={category} className="mb-4">
                             <h5 className="text-[#EFEFEF80] font-degular text-sm font-light">
                                 {category}
@@ -77,19 +77,42 @@ const Tools = ({ langages, frameworks, base_de_donnees }: ToolsProps) => {
                                         category === 'Langages'
                                             ? Langages
                                             : category === 'Frameworks'
-                                              ? Frameworks
-                                              : Outils
+                                                ? Frameworks
+                                                : Outils
                                     }
                                     alt={category}
                                     width={35}
                                     height={35}
                                 />
-                                <span className="font-roberto text-lg font-light text-[#FFF]">
+                                <span className="font-roberto text-base font-light text-[#FFF]">
                                     {items.join(', ')}
                                 </span>
                             </div>
                         </div>
-                    ),
+                    ) : (
+                        <div key={category} className="mb-4">
+                            <h5 className="text-[#EFEFEF80] font-degular text-sm font-light">
+                                {category}
+                            </h5>
+                            <div className="flex items-center gap-4 mt-1">
+                                <Image
+                                    src={
+                                        category === 'Langages'
+                                            ? Langages
+                                            : category === 'Frameworks'
+                                                ? Frameworks
+                                                : Outils
+                                    }
+                                    alt={category}
+                                    width={35}
+                                    height={35}
+                                />
+                                <span className="font-roberto text-base font-light text-[#FFF]">
+                                    Aucun{category === 'Base de données' ? 'e' : null} {category.toLowerCase()} utilisé{category === 'Base de données' ? 'e' : null}
+                                </span>
+                            </div>
+                        </div>
+                    )
             )}
         </div>
     );
@@ -106,29 +129,29 @@ export default async function ProjectDetail(props: {
 
     if (!project) {
         return (
-        <>
-            <Card
-                width={0}
-                height={0}
-                borderRadius={20}
-                css="mb-6 block md:hidden"
-            >
-                <BackButtonMobile />
-            </Card>
-            <Card borderRadius={20} width={100} height={0}>
-                <div className="relative flex w-full h-full items-center justify-center">
-                <BackButton />
-                    <div className=" px-6 py-4 text-center flex flex-col items-center justify-center">
-                        <h1 className="text-xl 2xl:text-3xl font-degular font-semibold text-[#EFEFEF] flex items-center gap-3">
-                            <span className="text-[#ef4444] text-2xl">⚠️</span> Erreur : Projet non trouvé
-                        </h1>
-                        <p className="text-[#efefefcc] text-sm 2xl:text-lg mt-2 font-light font-roberto">
-                            Le projet que vous cherchez <br className='hidden lg:block xl:hidden'/>n&apos;existe pas ou a été supprimé.
-                        </p>
+            <>
+                <Card
+                    width={0}
+                    height={0}
+                    borderRadius={20}
+                    css="mb-6 block md:hidden"
+                >
+                    <BackButtonMobile />
+                </Card>
+                <Card borderRadius={20} width={100} height={0}>
+                    <div className="relative flex w-full h-full items-center justify-center">
+                        <BackButton />
+                        <div className=" px-6 py-4 text-center flex flex-col items-center justify-center">
+                            <h1 className="text-xl 2xl:text-3xl font-degular font-semibold text-[#EFEFEF] flex items-center gap-3">
+                                <span className="text-[#ef4444] text-2xl">⚠️</span> Erreur : Projet non trouvé
+                            </h1>
+                            <p className="text-[#efefefcc] text-sm 2xl:text-lg mt-2 font-light font-roberto">
+                                Le projet que vous cherchez <br className='hidden lg:block xl:hidden' />n&apos;existe pas ou a été supprimé.
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </Card>
-        </>
+                </Card>
+            </>
         );
     }
 
@@ -160,7 +183,7 @@ export default async function ProjectDetail(props: {
                 </div>
             </Card>
             <div className="xl:flex justify-between items-start gap-8 mt-8 grow">
-                <div className="xl:w-[60%] w-full flex flex-col gap-8">
+                <div className="2xl:w-[60%] w-full flex flex-col gap-8">
                     <div className="w-full rounded-xl relative">
                         <Suspense
                             fallback={
@@ -171,7 +194,6 @@ export default async function ProjectDetail(props: {
                                     className="!rounded-xl"
                                     style={{
                                         backgroundColor: 'rgba(0,0,0,0.30)',
-                                        aspectRatio: '16/9',
                                     }}
                                 />
                             }
@@ -179,7 +201,7 @@ export default async function ProjectDetail(props: {
                             <VideoComponent fileName={project.video} />
                         </Suspense>
                     </div>
-                    <LightGallery photos={project.images} />
+                    <LightGallery photos={project.images} projectId={project.id} />
                     <div className="w-full flex justify-center items-center mb-6">
                         <h1
                             className="text-base text-[#efefefcc] opacity-70 font-degular font-semibold"
@@ -192,7 +214,7 @@ export default async function ProjectDetail(props: {
                         </h1>
                     </div>
                 </div>
-                <div className="xl:w-[40%] w-full flex h-auto">
+                <div className="2xl:w-[40%] w-full flex h-auto">
                     <Card width={100} height={0} borderRadius={20}>
                         <div className="p-12 grid grid-rows-[1fr,auto] h-full">
                             <div className="flex gap-4 items-center">

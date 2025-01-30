@@ -9,54 +9,9 @@ import Profile from './profile';
 import Footer from './footer';
 import Providers from './providers';
 
-
-export async function generateMetadata({
-    params,
-}: {
-    params: { locale: LocaleTypes };
-}): Promise<Metadata> {
-    const locale = (await params).locale;
-    
-    const maintitle = {
-        en: 'Gaël Amoros | Web Developer Portfolio',
-        fr: 'Gaël Amoros | Portfolio Développeur Web',
-    };
-    
-    const maindescription = {
-        en: 'Portfolio of Gaël Amoros, a web developer and computer science student based in Avignon.',
-        fr: 'Portfolio de Gaël Amoros, étudiant en informatique et développeur Web basé à Avignon.',
-    };
-    
-    const siteUrl = 'https://example.com';  // Remplace par l'URL réelle de ton site
-    const socialBanner = '/images/social-banner.jpg'; // Remplace par l'URL de l'image à afficher sur les réseaux sociaux
-
-    return {
-        metadataBase: new URL(siteUrl),
-        title: {
-            default: maintitle[locale],
-            template: `${maintitle[locale]} - Portfolio`,
-        },
-        description: maindescription[locale],
-        openGraph: {
-            title: maintitle[locale],
-            description: maindescription[locale],
-            url: siteUrl,
-            siteName: maintitle[locale],
-            images: [socialBanner],
-            locale: locale,
-            type: 'website',
-        },
-        robots: {
-            index: true,
-            follow: true,
-        },
-        alternates: {
-            canonical: siteUrl,
-        },
-        types: {
-            'application/rss+xml': `${siteUrl}/feed.xml`,
-        },
-    };
+export const metadata: Metadata = {
+    title: 'Portfolio - Gaël Amoros | Développeur Web',
+    description: 'Portfolio de Gaël Amoros, développeur web fullstack. Découvrez mes projets, mes compétences et mon parcours.',
 }
 
 const Roberto = localFont({
