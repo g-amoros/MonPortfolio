@@ -345,12 +345,14 @@ export default function Profile() {
                                     href={social.link}
                                     key={index}
                                     target="_blank"
+                                    data-aos="zoom-in"
                                     rel="noopener noreferrer"
                                     className=" h-fit hover:scale-90 transform transition-all duration-300"
                                 >
                                     <Image
                                         src={social.icon}
                                         alt={social.name}
+
                                         className="bottom-0"
                                     />
                                 </a>
