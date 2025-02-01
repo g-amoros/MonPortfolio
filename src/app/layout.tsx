@@ -7,6 +7,7 @@ import { AOSInit } from '@/components/ui/aos';
 import 'animate.css';
 import Profile from './profile';
 import Footer from './footer';
+import { Analytics } from "@vercel/analytics/react"
 import Providers from './providers';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
@@ -71,6 +72,7 @@ export default function RootLayout({
         <html lang="en">
             <AOSInit />
             <SpeedInsights />
+            <Analytics />
             <body
                 className={`${Roberto.variable} ${Degular.variable} relative `}
             >
