@@ -144,7 +144,7 @@ const defaultItemAnimationVariants: Record<
         container: defaultContainerVariants,
         item: {
             hidden: { opacity: 0, filter: 'blur(10px)', y: 20 },
-            show: (delay: number) => ({
+            show: () => ({
                 opacity: 1,
                 filter: 'blur(0px)',
                 y: 0,
@@ -170,7 +170,7 @@ const defaultItemAnimationVariants: Record<
         container: defaultContainerVariants,
         item: {
             hidden: { opacity: 0, filter: 'blur(10px)', y: -20 },
-            show: (delay: number) => ({
+            show: () => ({
                 opacity: 1,
                 filter: 'blur(0px)',
                 y: 0,
@@ -302,14 +302,10 @@ const defaultItemAnimationVariants: Record<
 
 export function TextAnimate({
     children,
-    delay = 0,
-    duration,
-    variants,
     className,
     segmentClassName,
     as: Component = 'p',
     startOnView = true,
-    once = false,
     by = 'character',
     animation = 'slideLeft',
     ...props
@@ -319,24 +315,24 @@ export function TextAnimate({
     // Use provided variants or default variants based on animation type
     const finalVariants = animation
         ? {
-              container: {
-                  ...defaultItemAnimationVariants[animation].container,
-                  show: {
-                      ...defaultItemAnimationVariants[animation].container.show,
-                      transition: {
-                          staggerChildren: staggerTimings[by],
-                      },
-                  },
-                  exit: {
-                      ...defaultItemAnimationVariants[animation].container.exit,
-                      transition: {
-                          staggerChildren: staggerTimings[by],
-                          staggerDirection: -1,
-                      },
-                  },
-              },
-              item: defaultItemAnimationVariants[animation].item,
-          }
+            container: {
+                ...defaultItemAnimationVariants[animation].container,
+                show: {
+                    ...defaultItemAnimationVariants[animation].container.show,
+                    transition: {
+                        staggerChildren: staggerTimings[by],
+                    },
+                },
+                exit: {
+                    ...defaultItemAnimationVariants[animation].container.exit,
+                    transition: {
+                        staggerChildren: staggerTimings[by],
+                        staggerDirection: -1,
+                    },
+                },
+            },
+            item: defaultItemAnimationVariants[animation].item,
+        }
         : { container: defaultContainerVariants, item: defaultItemVariants };
 
     let segments: string[] = [];
