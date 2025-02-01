@@ -240,7 +240,7 @@ export default function Profile() {
                             </TextAnimate>
                         </h2>
                         <p className="text-[#efefef] text-sm font-roberto font-normal mt-3">
-                            Basé à Avignon, je conçois et développe <br/>des solutions web sur mesure pour répondre <br/>à vos besoins numériques.
+                            Basé à Avignon, je conçois et développe <br className='hidden lg:block' />des solutions web sur mesure pour répondre <br className='hidden sm:block' />à vos besoins numériques.
                         </p>
                         <p className="text-[#efefef] text-sm font-roberto mt-8 font-bold">
                             Découvrez ce que je peux vous offrir :

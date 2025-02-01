@@ -30,7 +30,7 @@ async function VideoComponent({ fileName }: { fileName: string }) {
     const { url } = blobs.find((blob) => blob.pathname === fileName) || {};
 
     if (!url) {
-        return <div>Video not found</div>;
+        return <div>Vidéo introuvable</div>;
     }
 
     return (
