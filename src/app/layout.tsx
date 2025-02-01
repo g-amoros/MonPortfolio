@@ -8,6 +8,7 @@ import 'animate.css';
 import Profile from './profile';
 import Footer from './footer';
 import Providers from './providers';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
     title: 'Portfolio - Gaël Amoros | Développeur Web',
@@ -69,6 +70,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <AOSInit />
+            <SpeedInsights />
             <body
                 className={`${Roberto.variable} ${Degular.variable} relative `}
             >
