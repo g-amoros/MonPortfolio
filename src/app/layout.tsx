@@ -12,9 +12,10 @@ import Providers from './providers';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
+    metadataBase: new URL('https://portfolio-gael-amoros.com/'),
     title: 'Portfolio - Gaël Amoros | Développeur Web',
     description: 'Portfolio de Gaël Amoros, développeur web fullstack. Découvrez mes projets, mes compétences et mon parcours.',
-}
+};
 
 const Roberto = localFont({
     src: [
@@ -73,6 +74,7 @@ export default function RootLayout({
             <AOSInit />
             <SpeedInsights />
             <Analytics />
+            <meta name="robots" content="index, follow"/>
             <body
                 className={`${Roberto.variable} ${Degular.variable} relative `}
             >

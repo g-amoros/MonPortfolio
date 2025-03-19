@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://portfolio.gael-amoros.fr
+
+# Sitemaps
+Sitemap: https://portfolio.gael-amoros.fr/sitemap.xml
