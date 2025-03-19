@@ -209,6 +209,7 @@ export default function Profile() {
                             alt="profile picture"
                             width={Pp.width}
                             height={Pp.height}
+                            loading='lazy'
                             quality={100}
                             className='absolute -top-16 w-48'
                         />
