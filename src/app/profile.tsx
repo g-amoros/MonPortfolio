@@ -267,9 +267,9 @@ export default function Profile() {
                         </h1>
                         <div>
                             <div>
-                                <h5 className="text-[#efefefcc] font-degular text-lg font-light">
+                                <h2 className="text-[#efefefcc] font-degular text-lg font-light">
                                     Langages
-                                </h5>
+                                </h2>
                                 <div className="flex flex-wrap items-center gap-2 mt-2">
                                     {skills.langages.map((skill, index) => (
                                         <div key={index} className="w-7 h-7">
@@ -285,9 +285,9 @@ export default function Profile() {
                                 </div>
                             </div>
                             <div className="mt-4 mb-4">
-                                <h5 className="text-[#efefefcc] font-degular text-lg font-light">
+                                <h2 className="text-[#efefefcc] font-degular text-lg font-light">
                                     Frameworks
-                                </h5>
+                                </h2>
                                 <div className="flex flex-wrap items-center gap-2 mt-2">
                                     {skills.frameworks.map((skill, index) => (
                                         <div key={index} className="w-7 h-7">

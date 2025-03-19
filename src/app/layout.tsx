@@ -14,7 +14,23 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 export const metadata: Metadata = {
     metadataBase: new URL('https://portfolio-gael-amoros.com/'),
     title: 'Portfolio - Gaël Amoros | Développeur Web',
-    description: 'Portfolio de Gaël Amoros, développeur web fullstack. Découvrez mes projets, mes compétences et mon parcours.',
+    description: 'Découvrez le portfolio de Gaël Amoros, développeur web fullstack spécialisé en création d\'applications modernes et performantes. Explorez mes projets, mes compétences en développement front-end et back-end, ainsi que mon parcours professionnel.',
+    openGraph: {
+        title: "Portfolio - Gaël Amoros",
+        description: "Découvrez mes projets et mon expertise en développement web.",
+        url: "https://gael-amoros.fr",
+        siteName: "Gaël Amoros",
+        images: [
+          {
+            url: "https://gael-amoros.fr/Projects/Project4/Projet4.png",
+            width: 1200,
+            height: 630,
+            alt: "Aperçu du portfolio de Gaël Amoros",
+          },
+        ],
+        type: "website",
+        locale: "fr_FR",
+      },
 };
 
 const Roberto = localFont({
