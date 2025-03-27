@@ -7,30 +7,36 @@ import { AOSInit } from '@/components/ui/aos';
 import 'animate.css';
 import Profile from './profile';
 import Footer from './footer';
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from '@vercel/analytics/react';
 import Providers from './providers';
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
     metadataBase: new URL('https://portfolio-gael-amoros.com/'),
     title: 'Portfolio - Gaël Amoros | Développeur Web',
-    description: 'Découvrez le portfolio de Gaël Amoros, développeur web fullstack spécialisé en création d\'applications modernes et performantes. Explorez mes projets, mes compétences en développement front-end et back-end, ainsi que mon parcours professionnel.',
+    description:
+        "Découvrez le portfolio de Gaël Amoros, développeur web fullstack spécialisé en création d'applications modernes et performantes. Explorez mes projets, mes compétences en développement front-end et back-end, ainsi que mon parcours professionnel.",
     openGraph: {
-        title: "Portfolio - Gaël Amoros",
-        description: "Découvrez mes projets et mon expertise en développement web.",
-        url: "https://gael-amoros.fr",
-        siteName: "Gaël Amoros",
+        title: 'Portfolio - Gaël Amoros',
+        description:
+            'Découvrez mes projets et mon expertise en développement web.',
+        url: 'https://gael-amoros.fr',
+        siteName: 'Gaël Amoros',
         images: [
-          {
-            url: "https://gael-amoros.fr/Projects/Project4/Projet4.png",
-            width: 1200,
-            height: 630,
-            alt: "Aperçu du portfolio de Gaël Amoros",
-          },
+            {
+                url: 'https://gael-amoros.fr/Projects/Project4/Projet4.png',
+                width: 1200,
+                height: 630,
+                alt: 'Aperçu du portfolio de Gaël Amoros',
+            },
         ],
-        type: "website",
-        locale: "fr_FR",
-      },
+        type: 'website',
+        locale: 'fr_FR',
+    },
+    icons: {
+        icon: '/favicon.ico',
+        shortcut: '/favicon.ico',
+    },
 };
 
 const Roberto = localFont({
@@ -90,7 +96,7 @@ export default function RootLayout({
             <AOSInit />
             <SpeedInsights />
             <Analytics />
-            <meta name="robots" content="index, follow"/>
+            <meta name="robots" content="index, follow" />
             <body
                 className={`${Roberto.variable} ${Degular.variable} relative `}
             >
