@@ -14,17 +14,8 @@
             "/Image6.png"
         ],
         "video": "Projet1.mp4",
-        "langages": [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "TypeScript"
-        ],
-        "frameworks": [
-            "Astro",
-            "ReactJS",
-            "Node.js"
-        ],
+        "langages": ["HTML", "CSS", "JavaScript", "TypeScript"],
+        "frameworks": ["Astro", "ReactJS", "Node.js"],
         "base_de_donnees": null,
         "url": "https://www.chauffleet.com/"
     },
@@ -34,18 +25,9 @@
         "subtitle": "Un site vitrine pour un graphiste freelance",
         "description": "Conception d'un portfolio responsive pour un graphiste freelance, visant à présenter ses créations et attirer de nouveaux clients. Le site met l'accent sur l'accessibilité et la performance.",
         "image": "/Projects/Project2/Projet2.png",
-        "images": [
-            "/Image1.svg",
-            "/Image2.svg",
-            "/Image3.svg",
-            "/Image4.svg"
-        ],
+        "images": ["/Image1.svg", "/Image2.svg", "/Image3.svg", "/Image4.svg"],
         "video": "Projet2.mov",
-        "langages": [
-            "HTML",
-            "CSS",
-            "JavaScript, Php, Bootstrap"
-        ],
+        "langages": ["HTML", "CSS", "JavaScript, Php, Bootstrap"],
         "frameworks": null,
         "base_de_donnees": null,
         "url": "https://www.bankai-psd.fr/"
@@ -58,18 +40,9 @@
         "image": "/Projects/Project3/Projet3.png",
         "images": [],
         "video": "Projet3.mov",
-        "langages": [
-            "HTML",
-            "CSS",
-            "JavaScript"
-        ],
-        "frameworks": [
-            "ReactJS",
-            "Node.js"
-        ],
-        "base_de_donnees": [
-            "Firebase"
-        ],
+        "langages": ["HTML", "CSS", "JavaScript"],
+        "frameworks": ["ReactJS", "Node.js"],
+        "base_de_donnees": ["Firebase"],
         "url": null
     },
     {
@@ -86,38 +59,23 @@
             "/Image5.svg"
         ],
         "video": "Projet4.mp4",
-        "langages": [
-            "HTML",
-            "CSS",
-            "JavaScript"
-        ],
-        "frameworks": [
-            "React",
-            "Tailwind",
-            "Node.js"
-        ],
+        "langages": ["HTML", "CSS", "JavaScript"],
+        "frameworks": ["React", "Tailwind", "Node.js"],
         "base_de_donnees": null,
         "url": "https://portfolio.gael-amoros.fr"
     },
     {
         "id": "5",
-        "name": "Parc Informatique",
-        "subtitle": "Plate-forme de monitoring pour un parc informatique",
-        "description": "Création d'une plate-forme de monitoring pour un parc informatique sous Linux permettant de gérer et visualiser les données de plusieurs serveurs en temps réel. Un site permet de visualiser les données de manière graphique.",
+        "name": "Application mobile",
+        "subtitle": "Appli mobile d'un jeu (quizz) d'amiibos",
+        "description": "Création d'une application mobile pour un jeu de quizz sur les amiibos. L'application permet aux utilisateurs de tester leurs connaissances sur les amiibos",
         "image": "/Projects/Project5/Projet5.png",
         "images": [],
         "video": "Projet5.mov",
-        "langages": [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "PHP",
-            "Python",
-            "Bash"
-        ],
-        "frameworks": null,
-        "base_de_donnees": null,
-        "url": "https://github.com/MisterGawel/Parc-Informatique"
+        "langages": ["Kotlin", "Java"],
+        "frameworks": ["Android"],
+        "base_de_donnees": ["Realm"],
+        "url": "https://github.com/MisterGawel/Amiibo"
     },
     {
         "id": "6",
@@ -127,12 +85,7 @@
         "image": "/Projects/Project6/Projet6.png",
         "images": [],
         "video": "Projet6.mp4",
-        "langages": [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "PHP"
-        ],
+        "langages": ["HTML", "CSS", "JavaScript", "PHP"],
         "frameworks": null,
         "base_de_donnees": null,
         "url": null
@@ -145,11 +98,22 @@
         "image": "/Projects/Project7/Projet7.png",
         "images": [],
         "video": "Projet7.mov",
-        "langages": [
-            "C++"
-        ],
+        "langages": ["C++"],
         "frameworks": null,
         "base_de_donnees": null,
         "url": "https://bankai-psd.netlify.app/"
+    },
+    {
+        "id": "8",
+        "name": "Parc Informatique",
+        "subtitle": "Plate-forme de monitoring pour un parc informatique",
+        "description": "Création d'une plate-forme de monitoring pour un parc informatique sous Linux permettant de gérer et visualiser les données de plusieurs serveurs en temps réel. Un site permet de visualiser les données de manière graphique.",
+        "image": "/Projects/Project8/Projet8.png",
+        "images": [],
+        "video": "Projet8.mov",
+        "langages": ["HTML", "CSS", "JavaScript", "PHP", "Python", "Bash"],
+        "frameworks": null,
+        "base_de_donnees": null,
+        "url": "https://github.com/MisterGawel/Parc-Informatique"
     }
 ]
