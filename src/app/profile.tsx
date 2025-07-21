@@ -1,3 +1,5 @@
+import { BsArrowReturnLeft } from 'react-icons/bs';
+import { IoMdCall } from 'react-icons/io';
 import React from 'react';
 import Card from '../components/ui/card';
 import Image from 'next/image';
@@ -209,9 +211,9 @@ export default function Profile() {
                             alt="profile picture"
                             width={Pp.width}
                             height={Pp.height}
-                            loading='lazy'
+                            loading="lazy"
                             quality={100}
-                            className='absolute -top-16 w-48'
+                            className="absolute -top-16 w-48"
                         />
                     </div>
                     <div className="flex flex-col justify-center flex-shrink-0 px-12 mt-[10.5rem]">
@@ -241,7 +243,11 @@ export default function Profile() {
                             </TextAnimate>
                         </h2>
                         <p className="text-[#efefef] text-sm font-roberto font-normal mt-3">
-                            Basé à Avignon, je conçois et développe <br className='hidden lg:block' />des solutions web sur mesure pour répondre <br className='hidden sm:block' />à vos besoins numériques.
+                            Basé à Avignon, je conçois et développe{' '}
+                            <br className="hidden lg:block" />
+                            des solutions web sur mesure pour répondre{' '}
+                            <br className="hidden sm:block" />à vos besoins
+                            numériques.
                         </p>
                         <p className="text-[#efefef] text-sm font-roberto mt-8 font-bold">
                             Découvrez ce que je peux vous offrir :
@@ -257,52 +263,19 @@ export default function Profile() {
             <div className="h-fit animate__fadeIn animate__duration-1s w-full md:w-1/2 lg:w-full">
                 <Card width={100} height={100}>
                     <div className="h-full flex flex-col justify-between gap-8 px-12 py-12">
-                        <h1
-                            className="text-2xl text-[#fff] font-degular font-bold"
-                            style={{
-                                textShadow:
-                                    '6.41px 6.41px 9.1px rgba(0, 0, 0, 0.11)',
-                            }}
-                        >
-                            Mes préférences
-                        </h1>
-                        <div>
-                            <div>
-                                <h2 className="text-[#efefefcc] font-degular text-lg font-light">
-                                    Langages
-                                </h2>
-                                <div className="flex flex-wrap items-center gap-2 mt-2">
-                                    {skills.langages.map((skill, index) => (
-                                        <div key={index} className="w-7 h-7">
-                                            <Image
-                                                src={skill.icon}
-                                                alt={skill.name}
-                                                className="w-fit"
-                                                width={skill.width}
-                                                height={skill.height}
-                                            />
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                            <div className="mt-4 mb-4">
-                                <h2 className="text-[#efefefcc] font-degular text-lg font-light">
-                                    Frameworks
-                                </h2>
-                                <div className="flex flex-wrap items-center gap-2 mt-2">
-                                    {skills.frameworks.map((skill, index) => (
-                                        <div key={index} className="w-7 h-7">
-                                            <Image
-                                                src={skill.icon}
-                                                alt={skill.name}
-                                                className="w-fit"
-                                                width={skill.width}
-                                                height={skill.height}
-                                            />
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
+                        <div className="flex items-center">
+                            <h1
+                                className="text-2xl text-[#fff] font-degular font-bold"
+                                style={{
+                                    textShadow:
+                                        '6.41px 6.41px 9.1px rgba(0, 0, 0, 0.11)',
+                                }}
+                            >
+                                Contactez-moi ici :
+                                <span className="ml-2">
+                                    <BsArrowReturnLeft className="inline-block text-[#fff] text-2xl -rotate-90" />
+                                </span>
+                            </h1>
                         </div>
                         <div className="flex items-center flex-col gap-4">
                             <AnimatedSubscribeButton className="w-36">
@@ -342,7 +315,6 @@ export default function Profile() {
                                     <Image
                                         src={social.icon}
                                         alt={social.name}
-
                                         className="bottom-0"
                                     />
                                 </a>
