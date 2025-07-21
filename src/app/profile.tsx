@@ -1,5 +1,4 @@
 import { BsArrowReturnLeft } from 'react-icons/bs';
-import { IoMdCall } from 'react-icons/io';
 import React from 'react';
 import Card from '../components/ui/card';
 import Image from 'next/image';
@@ -64,86 +63,6 @@ const socials = [
         link: 'https://www.tiktok.com/@as.gael13',
     },
 ];
-
-const skills = {
-    langages: [
-        {
-            name: 'HTML',
-            icon: Html,
-            width: 45,
-            height: 45,
-        },
-        {
-            name: 'CSS',
-            icon: Css,
-            width: 45,
-            height: 45,
-        },
-        {
-            name: 'Javascript',
-            icon: Js,
-            width: 45,
-            height: 45,
-        },
-        {
-            name: 'Typescript',
-            icon: Ts,
-            width: 55,
-            height: 55,
-        },
-
-        {
-            name: 'Php',
-            icon: Php,
-            width: 45,
-            height: 45,
-        },
-        {
-            name: 'Java',
-            icon: Java,
-            width: 45,
-            height: 45,
-        },
-        {
-            name: 'C++',
-            icon: C,
-            width: 45,
-            height: 45,
-        },
-    ],
-    frameworks: [
-        {
-            name: 'Node',
-            icon: Node,
-            width: 45,
-            height: 45,
-        },
-        {
-            name: 'React',
-            icon: ReactIcon,
-            width: 45,
-            height: 45,
-        },
-        {
-            name: 'NextJS',
-            icon: NextJS,
-            width: 45,
-            height: 45,
-        },
-        {
-            name: 'Vite',
-            icon: Vite,
-            width: 45,
-            height: 45,
-        },
-        {
-            name: 'Expo',
-            icon: Expo,
-            width: 45,
-            height: 45,
-        },
-    ],
-};
 
 interface profileItemProps {
     text: string;
